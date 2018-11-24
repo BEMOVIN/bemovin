@@ -1,0 +1,18 @@
+
+.navbar {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    $logo-size: 3em;
+
+    & .navbar-brand {
+        & img {
+            width: $logo-size;
+        }
+    }
+
+    & .navbar-nav {
+        margin-left: -$logo-size;
+        width: 100%;
+    }
+}
