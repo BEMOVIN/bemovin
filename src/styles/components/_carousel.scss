@@ -1,0 +1,13 @@
+.carousel {
+    $carousel-height: 100vh;
+    height: $carousel-height;
+    & img {
+        max-height: $carousel-height;
+    }
+    & .bmv-carousel-content {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: $carousel-height;
+    }
+}

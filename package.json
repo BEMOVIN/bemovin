@@ -42,5 +42,10 @@
     "ES6+",
     "live reload",
     "Sass"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.5",
+    "bootstrap": "^4.1.3"
+  }
 }

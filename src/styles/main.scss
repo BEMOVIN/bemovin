@@ -1,5 +1,8 @@
-@import 'reset.scss';
+@import "~bootstrap/scss/bootstrap";
+
+@import './components/variables';
 @import './components/nav';
+@import './components/carousel';
 
 h1 {
   text-align: center;

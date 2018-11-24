@@ -1,9 +1,12 @@
+@import 'variables';
 
 .navbar {
+    z-index: 10;
+    height: $navbar-size;
+    margin-bottom: -$navbar-size;
     font-size: 13px;
     font-weight: 700;
-    text-transform: uppercase;
-    $logo-size: 3em;
+    $logo-size: 10em;
 
     & .navbar-brand {
         & img {
@@ -14,5 +17,12 @@
     & .navbar-nav {
         margin-left: -$logo-size;
         width: 100%;
+
+        & .nav-item {
+            margin: 0 1.5em;
+            & .nav-link {
+                color: $c-light;
+            }
+        }
     }
 }
