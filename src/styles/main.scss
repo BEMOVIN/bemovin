@@ -3,7 +3,36 @@
 @import './components/variables';
 @import './components/nav';
 @import './components/carousel';
+@import './components/key-copy';
 
-h1 {
-  text-align: center;
+.bmv-title {
+  display: block;
+  color: $c-palette-primary;
+  letter-spacing: $letter-spacing-xs;
+  font-size: 2.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.bmv-message {
+  display: block;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.bmv-text-logo {
+  font-style: italic;
+  font-weight: 700;
+
+  & .bmv-text-logo-accent {
+    color: $c-palette-primary;
+  }
+
+  & .bmv-text-logo-normal {
+    &:before {
+      content: "|";
+      font-weight: 300;
+    }
+  }
 }
