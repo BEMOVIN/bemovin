@@ -1,6 +1,10 @@
+@import './components/variables';
+$theme-colors: (
+  "primary": $c-palette-primary,
+  "danger": $c-palette-sec-primary
+);
 @import "~bootstrap/scss/bootstrap";
 
-@import './components/variables';
 @import './components/nav';
 @import './components/carousel';
 @import './components/key-copy';
