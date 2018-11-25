@@ -26,11 +26,13 @@
 
         & .bmv-carousel-title-sm {
             font-size: 1.6em;
+            @include animation-slide-in-right(0.4s);
         }
 
         & .bmv-carousel-title-lg {
             font-size: 2.6em;
             font-weight: 700;
+            @include animation-slide-in-left(0.6s);
         }
 
         & .bmv-carousel-btn {
@@ -39,6 +41,7 @@
             border-radius: 30px;
             margin: 2em auto 1em auto;
             text-transform: uppercase;
+            @include animation-slide-in-right(0.8s);
         }
     }
 }
