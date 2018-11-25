@@ -1,23 +1,26 @@
 .navbar {
+    $logo-size: 10rem;
+
     z-index: 10;
     height: $navbar-size;
     margin-bottom: -$navbar-size;
     font-size: 13px;
     font-weight: 700;
-    $logo-size: 10em;
 
     & .navbar-brand {
+        position: absolute;
+
         & img {
             width: $logo-size;
         }
     }
 
     & .navbar-nav {
-        margin-left: -$logo-size;
         width: 100%;
 
         & .nav-item {
             margin: 0 1.5em;
+
             & .nav-link {
                 color: $text-light;
                 letter-spacing: $letter-spacing-sm;
