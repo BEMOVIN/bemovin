@@ -6,9 +6,11 @@ $theme-colors: (
 @import "~bootstrap/scss/bootstrap";
 
 @import './components/animations';
+
 @import './components/nav';
 @import './components/carousel';
 @import './components/key-copy';
+@import './components/activity-types';
 
 .bmv-title {
   display: block;
