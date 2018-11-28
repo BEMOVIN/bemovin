@@ -1,47 +1,47 @@
 .carousel {
-    $carousel-height: 100vh;
+  $carousel-height: 100vh;
+  height: $carousel-height;
+  & img {
+    max-height: $carousel-height;
+  }
+  & .bmv-carousel-content {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
     height: $carousel-height;
-    & img {
-        max-height: $carousel-height;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 10em;
+
+    & .bmv-carousel-title-sm,
+    & .bmv-carousel-title-lg {
+      color: $text-light;
+      text-transform: uppercase;
+      margin-bottom: 1em;
+      letter-spacing: $letter-spacing-xs;
     }
-    & .bmv-carousel-content {
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: $carousel-height;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-        padding-top: 10em;
 
-        & .bmv-carousel-title-sm,
-        & .bmv-carousel-title-lg {
-            color: $text-light;
-            text-transform: uppercase;
-            margin-bottom: 1em;
-            letter-spacing: $letter-spacing-xs;
-        }
-
-        & .bmv-carousel-title-sm {
-            font-size: 1.6em;
-            @include animation-slide-in-right(0.4s);
-        }
-
-        & .bmv-carousel-title-lg {
-            font-size: 2.6em;
-            font-weight: 700;
-            @include animation-slide-in-left(0.6s);
-        }
-
-        & .bmv-carousel-btn {
-            width: 14em;
-            padding: 1em 2.6em;
-            border-radius: 30px;
-            margin: 2em auto 1em auto;
-            text-transform: uppercase;
-            @include animation-slide-in-right(0.8s);
-        }
+    & .bmv-carousel-title-sm {
+      font-size: 1.6em;
+      @include animation-slide-in-right(0.4s);
     }
+
+    & .bmv-carousel-title-lg {
+      font-size: 2.6em;
+      font-weight: 700;
+      @include animation-slide-in-left(0.6s);
+    }
+
+    & .bmv-carousel-btn {
+      width: 14em;
+      padding: 1em 2.6em;
+      border-radius: 30px;
+      margin: 2em auto 1em auto;
+      text-transform: uppercase;
+      @include animation-slide-in-right(0.8s);
+    }
+  }
 }

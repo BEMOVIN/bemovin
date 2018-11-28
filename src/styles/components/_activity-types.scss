@@ -1,31 +1,31 @@
 .bmv-activity-types {
-    min-height: 42em;
-    max-height: 50em;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    background-color: $c-palette-light;
-    // background: linear-gradient(160deg, $c-palette-light 0%, $c-palette-light 40%, $c-palette-dark 85%, $c-palette-dark 100%);
+  min-height: 42em;
+  max-height: 50em;
+  max-width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: $c-dark;
 
-    & .card {
-        margin: 0 2em;
-        display: inline-flex;
-        width: 100%;
-        max-width: 26rem;
-        min-width: 16rem;
+  .row {
+    flex: 1;
+    $border-size: 10.4em; // depends on the height of the parent
 
-        & .card-img-top {
-            height: 8em;
-            background-size: cover;
-            text-align: center;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            font-size: 2em;
-            font-weight: 700;
-            color: $c-palette-sec-dark;
-        }
+    & .col {
+      flex: 1;
+      background-size: cover;
     }
+  }
+
+  & .bmv-activity-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    color: $c-light;
+
+    & .bmv-activity-subtitle {
+      color: $c-palette-light;
+    }
+  }
 }

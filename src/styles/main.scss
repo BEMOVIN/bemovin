@@ -25,7 +25,7 @@ $theme-colors: (
 .bmv-message {
   display: block;
   font-size: 1.4em;
-  letter-spacing: 0.02em;
+  letter-spacing: $letter-spacing-xxs;
 }
 
 .bmv-text-logo {
@@ -42,4 +42,16 @@ $theme-colors: (
       font-weight: 300;
     }
   }
+}
+
+.bmv-text-letter-spacing-xxs {
+  letter-spacing: $letter-spacing-xs;
+}
+
+.bmv-text-letter-spacing-xs {
+  letter-spacing: $letter-spacing-xs;
+}
+
+.bmv-text-letter-spacing-sm {
+  letter-spacing: $letter-spacing-sm;
 }
