@@ -1,10 +1,10 @@
 .navbar {
-    $logo-size: 10rem;
+    $logo-size: 12rem;
 
     z-index: 10;
     height: $navbar-size;
     margin-bottom: -$navbar-size;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
 
     & .navbar-brand {
@@ -17,6 +17,7 @@
 
     & .navbar-nav {
         width: 100%;
+        margin-top: 2em;
 
         & .nav-item {
             margin: 0 1.5em;
