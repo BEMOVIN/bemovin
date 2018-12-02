@@ -1,5 +1,5 @@
 .fa {
-  transition: 0.4s ease;
+  @include default-transition();
   text-align: center;
   text-decoration: none;
 }

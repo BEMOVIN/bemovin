@@ -9,6 +9,11 @@
 
   & .card {
     border: 1px solid $c-dark;
+    @include default-transition();
+
+    &:hover {
+      transform: translateY(-1em);
+    }
 
     & .card-img-top {
       height: 20em;

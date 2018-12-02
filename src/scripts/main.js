@@ -8,7 +8,7 @@ import AOS from 'aos';
 greet();
 
 AOS.init({
-  duration: 500,
+  duration: 700,
   once: true
 });
 
