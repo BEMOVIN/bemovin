@@ -19,6 +19,9 @@
 
     & .nav-item {
       margin: 0 1.5em;
+      &:last-of-type, &:first-of-type {
+        margin-left: auto;
+      }
 
       & .nav-link {
         color: $text-light;
