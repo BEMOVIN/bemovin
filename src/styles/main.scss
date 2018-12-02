@@ -5,6 +5,7 @@ $theme-colors: (
   "success": $c-palette-accent-dark,
 );
 @import "~bootstrap/scss/bootstrap";
+@import "~aos/src/sass/aos.scss";
 
 @import './components/animations';
 @import './components/social-media';
