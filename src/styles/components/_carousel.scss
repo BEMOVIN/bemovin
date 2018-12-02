@@ -46,6 +46,7 @@
     }
 
     & .bmv-social-icons-pack {
+      @include animation-slide-in-right(0.8s);
       & .fa {
         font-size: 2.2em;
       }
