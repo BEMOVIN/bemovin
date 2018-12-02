@@ -1,0 +1,35 @@
+.fa {
+  transition: 0.4s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  &:hover {
+    background: #3B5998;
+  }
+  color: white;
+}
+
+.fa-youtube {
+  &:hover {
+    background: #bb0000;
+  }
+  color: white;
+}
+
+.fa-instagram {
+  &:hover {
+    background: #125688;
+  }
+  color: white;
+}
+
+.bmv-social-icons-pack {
+  & .fa {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+  }
+}

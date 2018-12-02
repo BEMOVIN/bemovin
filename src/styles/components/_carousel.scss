@@ -18,20 +18,21 @@
 
     & .bmv-carousel-title-sm,
     & .bmv-carousel-title-lg {
-      color: $text-light;
       text-transform: uppercase;
+      font-weight: 700;
       margin-bottom: 1em;
       letter-spacing: $letter-spacing-xs;
     }
 
     & .bmv-carousel-title-sm {
       font-size: 1.6em;
+      color: $c-palette-accent-dark;
       @include animation-slide-in-right(0.4s);
     }
 
     & .bmv-carousel-title-lg {
       font-size: 2.6em;
-      font-weight: 700;
+      color: $text-light;
       @include animation-slide-in-left(0.6s);
     }
 
@@ -42,6 +43,12 @@
       margin: 2em auto 1em auto;
       text-transform: uppercase;
       @include animation-slide-in-right(0.8s);
+    }
+
+    & .bmv-social-icons-pack {
+      & .fa {
+        font-size: 2.2em;
+      }
     }
   }
 }

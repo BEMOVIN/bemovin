@@ -1,31 +1,37 @@
 .navbar {
-    $logo-size: 12rem;
+  $logo-size: 12rem;
 
-    z-index: 10;
-    height: $navbar-size;
-    margin-bottom: -$navbar-size;
-    font-size: 14px;
-    font-weight: 700;
+  z-index: 10;
+  height: $navbar-size;
+  margin-bottom: -$navbar-size;
+  font-size: 14px;
+  font-weight: 700;
 
-    & .navbar-brand {
-        position: absolute;
-
-        & img {
-            width: $logo-size;
-        }
+  & .navbar-brand {
+    & img {
+      width: $logo-size;
     }
+  }
 
-    & .navbar-nav {
-        width: 100%;
-        margin-top: 2em;
+  & .navbar-nav {
+    width: 100%;
+    margin-top: 2em;
 
-        & .nav-item {
-            margin: 0 1.5em;
+    & .nav-item {
+      margin: 0 1.5em;
 
-            & .nav-link {
-                color: $text-light;
-                letter-spacing: $letter-spacing-sm;
-            }
+      & .nav-link {
+        color: $text-light;
+        letter-spacing: $letter-spacing-sm;
+      }
+
+      & .bmv-social-icons-pack {
+        align-self: flex-end;
+
+        & .fa {
+          font-size: 1.4em;
         }
+      }
     }
+  }
 }

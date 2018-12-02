@@ -1,11 +1,13 @@
 @import './components/variables';
 $theme-colors: (
   "primary": $c-palette-primary,
-  "danger": $c-palette-sec-primary
+  "danger": $c-palette-sec-primary,
+  "success": $c-palette-accent-dark,
 );
 @import "~bootstrap/scss/bootstrap";
 
 @import './components/animations';
+@import './components/social-media';
 
 @import './components/nav';
 @import './components/carousel';
@@ -37,13 +39,6 @@ $theme-colors: (
 
   & .bmv-text-logo-accent {
     color: $c-palette-primary;
-  }
-
-  & .bmv-text-logo-normal {
-    &:before {
-      content: "|";
-      font-weight: 300;
-    }
   }
 }
 
