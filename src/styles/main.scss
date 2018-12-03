@@ -14,9 +14,13 @@ $theme-colors: (
 @import './components/nav';
 @import './components/carousel';
 @import './components/key-copy';
+@import './components/who';
 @import './components/activity-types';
 @import './components/calendar';
 @import './components/team';
+@import './components/prices';
+@import './components/contacts';
+@import './components/footer';
 
 a {
   &:hover {
