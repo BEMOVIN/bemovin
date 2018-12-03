@@ -9,15 +9,18 @@
 
   & .card {
     border: 1px solid $c-dark;
-    @include default-transition();
 
     &:hover {
-      transform: translateY(-1em);
+      & .card-img-top {
+        filter: grayscale(0);
+      }
     }
 
     & .card-img-top {
       height: 20em;
       background-size: cover;
+      @include transition(0.6s);
+      filter: grayscale(100%);
     }
 
     & .card-body {

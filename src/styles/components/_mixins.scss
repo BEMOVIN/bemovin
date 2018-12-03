@@ -1,4 +1,8 @@
 
+@mixin transition($time) {
+  transition: all $time ease;
+}
+
 @mixin default-transition() {
-  transition: 0.4s ease;
+  @include transition(0.4s);
 }
