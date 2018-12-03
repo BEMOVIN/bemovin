@@ -1,0 +1,40 @@
+.bmv-who {
+  padding: 8em 2em;
+
+  & .bmv-title {
+    margin-bottom: 2em;
+  }
+
+  & .bmv-who-item {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+
+    &:hover {
+      & .bmv-who-icon {
+        transform: translateY(-0.3em);
+      }
+    }
+
+    & .bmv-who-icon {
+      font-size: 4em;
+      margin-bottom: 0.4em;
+      color: $c-palette-dark;
+      @include transition(0.6s);
+      transform: translateY(0);
+    }
+
+    & .bmv-who-title {
+      max-height: 4em;
+      min-height: 4em;
+      height: 100%;
+      color: $c-palette-primary;
+      letter-spacing: $letter-spacing-xxs;
+      text-transform: uppercase;
+    }
+
+    & .bmv-who-description {
+      color: $text-light-dark;
+    }
+  }
+}
