@@ -18,6 +18,12 @@ $theme-colors: (
 @import './components/calendar';
 @import './components/team';
 
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .bmv-title {
   display: block;
   color: $c-palette-primary;

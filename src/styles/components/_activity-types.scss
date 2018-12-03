@@ -25,7 +25,13 @@
     color: $c-light;
 
     & .bmv-activity-subtitle {
-      color: $c-palette-light;
+      font-size: 0.8em;
+      &.btn {
+        border-radius: 30px;
+        width: 16em;
+        margin: 1em auto;
+        padding: 1em;
+      }
     }
   }
 }
