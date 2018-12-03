@@ -1,32 +1,30 @@
-.fa {
+.fab {
   @include default-transition();
   text-align: center;
   text-decoration: none;
-}
+  color: $text-light;
 
-.fa-facebook {
-  &:hover {
-    background: #3B5998;
+  &.fa-facebook-f {
+    &:hover {
+      background: #3B5998;
+    }
   }
-  color: white;
-}
 
-.fa-youtube {
-  &:hover {
-    background: #bb0000;
+  &.fa-youtube {
+    &:hover {
+      background: #bb0000;
+    }
   }
-  color: white;
-}
 
-.fa-instagram {
-  &:hover {
-    background: #125688;
+  &.fa-instagram {
+    &:hover {
+      background: #125688;
+    }
   }
-  color: white;
 }
 
 .bmv-social-icons-pack {
-  & .fa {
+  & .fab {
     border-radius: 50%;
     width: 2em;
     height: 2em;
