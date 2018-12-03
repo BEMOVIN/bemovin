@@ -37,6 +37,10 @@ a {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1em;
+
+  &.bmv-title-dark {
+    color: $c-palette-accent-dark;
+  }
 }
 
 .bmv-message {

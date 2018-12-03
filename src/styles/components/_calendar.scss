@@ -4,6 +4,7 @@
   max-height: 60em;
   min-height: 38em;
   padding: 6em;
+  background-color: $c-dark;
 
   & table {
     & th, & td {
@@ -47,7 +48,7 @@
     & .bmv-calendar-cell-subtitle {
       font-size: 0.8em;
       text-transform: uppercase;
-      color: $text-light-dark;
+      color: $text-light;
     }
   }
 }
