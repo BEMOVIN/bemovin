@@ -1,0 +1,61 @@
+.bmv-prices {
+  min-height: 60em;
+  max-height: 70em;
+  height: 100%;
+  padding: 6em 2em;
+
+  & .bmv-message {
+    text-transform: uppercase;
+  }
+
+  & .bmv-prices-subtitle-accent {
+    width: 100%;
+    display: block;
+    color: $c-palette-sec-primary;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em 0;
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+
+  & .container {
+    margin: 2em auto 4em auto;
+  }
+
+  & .bmv-prices-facility {
+    & .card {
+      background-color: $c-palette-primary;
+      color: $text-light;
+    }
+  }
+
+  & .bmv-prices-trainers {
+    & .card {
+      background-color: $c-palette-sec-dark;
+      color: $text-light;
+    }
+  }
+
+  & .bmv-price-tag {
+    text-align: center;
+    display: inline-flex;
+    & .card {
+      flex: 1;
+
+      & .card-header {
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+
+      & .card-title {
+        min-height: 2.2em;
+        max-height: 4em;
+      }
+
+      & .bmv-price-label {
+        font-weight: 700;
+      }
+    }
+  }
+}
