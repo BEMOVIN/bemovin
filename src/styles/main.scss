@@ -22,6 +22,12 @@ $theme-colors: (
 @import './components/contacts';
 @import './components/footer';
 
+@import './components/fonts';
+
+body {
+  font-family: GothaPro, $font-family-sans-serif;
+}
+
 a {
   &:hover {
     text-decoration: none;

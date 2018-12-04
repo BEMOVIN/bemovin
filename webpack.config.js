@@ -2,6 +2,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const devMode = process.env.NODE_ENV !== 'production';
+const configType = devMode ? 'dev' : 'prod';
+
 
 module.exports = {
   // Tells Webpack which built-in optimizations to use
@@ -109,5 +111,11 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'assets/styles/main.css'
     })
-  ]
+  ],
+
+  resolve: {
+    alias: {
+      config: path.join(__dirname, `./src/styles/config/config.${configType}.scss`)
+    }
+  }
 };

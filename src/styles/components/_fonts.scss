@@ -1,0 +1,18 @@
+@import 'config';
+
+@font-face {
+    font-family: GothaPro;
+    src: url("#{$baseUrl}/assets/fonts/gotham_pro/GothaProMed.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GothaPro;
+    font-weight: bold;
+    src: url("#{$baseUrl}/assets/fonts/gotham_pro/GothaProBol.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GothaPro;
+    font-weight: italic;
+    src: url("#{$baseUrl}/assets/fonts/gotham_pro/GothaProIta.otf") format("opentype");
+}
