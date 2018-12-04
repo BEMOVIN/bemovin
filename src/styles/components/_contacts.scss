@@ -1,0 +1,71 @@
+.bmv-contacts {
+  height: 100%;
+  min-height: 60em;
+  max-height: 70em;
+  background-color: $c-dark;
+
+  & .bmv-title {
+    &.bmv-title-dark {
+      color: $text-light;
+    }
+  }
+
+  & .bmv-contacts-img-wrapper {
+    padding-top: 4em;
+    height: 30em;
+    background-color: $c-palette-sec-dark;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  & .bmv-contacts-content {
+    background-color: $c-light;
+    margin-top: -12em;
+
+    & .col {
+      padding: 0;
+    }
+
+    & .bmv-contacts-info {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      padding: 3.4em;
+      height: 100%;
+
+      & td {
+        padding: 0.4em 0;
+
+        & a {
+          color: $text-dark;
+        }
+
+        & i {
+          text-align: center;
+          font-size: 1.5em;
+          margin-right: 0.5em;
+        }
+
+        &:nth-of-type(1) {
+          text-align: center;
+          color: $c-palette-primary;
+        }
+      }
+    }
+  }
+
+  & .bmv-contacts-social {
+    margin-top: 3.4em;
+    text-align: center;
+
+    & .bmv-contacts-social-title {
+      text-transform: uppercase;
+      color: $c-palette-accent-dark;
+    }
+
+    & .bmv-social-icons-pack {
+      font-size: 1.8em;
+    }
+  }
+}
