@@ -5,6 +5,9 @@
   min-height: 38em;
   padding: 6em;
   background-color: $c-dark;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   & table {
     & th, & td {
