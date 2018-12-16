@@ -25,7 +25,7 @@ $theme-colors: (
 @import './components/fonts';
 
 body {
-  font-family: GothaPro, $font-family-sans-serif;
+  font-family: $font-family-sans-serif;
   background-color: $c-light-dark;
 }
 
