@@ -139,11 +139,17 @@
 
       & .bmv-calendar-cell-title {
         font-weight: bold;
-        font-size: 0.6em;
+        font-size: 0.8em;
       }
 
       & .bmv-calendar-cell-subtitle {
         display: none;
+      }
+    }
+    &.bmv-calendar-compact {
+      & .bmv-calendar-cell-title {
+        font-weight: bold;
+        font-size: 1em;
       }
     }
   }
