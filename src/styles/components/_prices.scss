@@ -1,6 +1,5 @@
 .bmv-prices {
-  min-height: 60em;
-  max-height: 70em;
+  min-height: 58em;
   height: 100%;
   padding: 6em 2em;
 
@@ -37,24 +36,56 @@
     }
   }
 
-  & .bmv-price-tag {
-    text-align: center;
-    display: inline-flex;
-    & .card {
-      flex: 1;
+  & .bmv-price-tags {
+    & .bmv-price-tag {
+      text-align: center;
+      display: inline-flex;
+      min-width: 16em;
 
-      & .card-header {
-        font-size: 2em;
-        text-transform: uppercase;
+      & .card {
+        flex: 1;
+
+        & .card-header {
+          font-size: 2em;
+          text-transform: uppercase;
+        }
+
+        & .card-title {
+          min-height: 2.2em;
+          max-height: 4em;
+        }
+
+        & .bmv-price-label {
+          font-weight: 700;
+        }
       }
+    }
+  }
+}
 
-      & .card-title {
-        min-height: 2.2em;
-        max-height: 4em;
+@include media-breakpoint-down(lg) {
+  .bmv-prices {
+    padding: 4em 2em;
+
+    & .bmv-price-tags {
+      & .bmv-price-tag {
+        margin-top: 1em;
       }
+    }
+  }
+}
 
-      & .bmv-price-label {
-        font-weight: 700;
+@include media-breakpoint-down(xs) {
+  .bmv-prices {
+    padding: 4em 2em;
+
+    & .bmv-price-tags {
+      & .bmv-price-tag {
+        margin-top: 1em;
+
+        &:nth-of-type(1) {
+          margin-top: 0;
+        }
       }
     }
   }
