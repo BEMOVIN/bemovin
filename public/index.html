@@ -12,23 +12,41 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-xl">
       <a class="navbar-brand" href="#">
         <img src="./assets/images/logo.png" alt="" />
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav justify-content-end text-uppercase">
-          <li class="nav-item"><a class="nav-link" href="#about">За нас</a></li>
-          <li class="nav-item"><a class="nav-link" href="#who">Тренировки</a></li>
-          <li class="nav-item"><a class="nav-link" href="#schedule">График</a></li>
-          <li class="nav-item"><a class="nav-link" href="#team">Екип</a></li>
-          <li class="nav-item"><a class="nav-link" href="#prices">Цени</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacts">Контакти</a></li>
+          <li class="nav-item">
+            <a class="nav-link bmv-nav-link-desktop" href="#about">За нас</a>
+            <a class="nav-link bmv-nav-link-mobile" href="#about" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">За нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bmv-nav-link-desktop" href="#who">Тренировки</a>
+            <a class="nav-link bmv-nav-link-mobile" href="#who" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Тренировки</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bmv-nav-link-desktop" href="#schedule">График</a>
+            <a class="nav-link bmv-nav-link-mobile" href="#schedule" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">График</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bmv-nav-link-desktop" href="#team">Екип</a>
+            <a class="nav-link bmv-nav-link-mobile" href="#team" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Екип</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bmv-nav-link-desktop" href="#prices">Цени</a>
+            <a class="nav-link bmv-nav-link-mobile" href="#prices" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Цени</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bmv-nav-link-desktop" href="#contacts">Контакти</a>
+            <a class="nav-link bmv-nav-link-mobile" href="#contacts" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">Контакти</a>
+          </li>
           <li class="nav-item">
             <div class="bmv-social-icons-pack">
               <a href="https://www.facebook.com/bemovinsport"><i class="fab fa-facebook-f"></i></a>
@@ -170,7 +188,9 @@
     <!-- Who end -->
 
     <!-- Calendar -->
-    <div class="bmv-calendar" id="schedule" style="background-image: url('./assets/images/meghan-holmes-779221-unsplash.dark.jpg')">
+    <div id="schedule">
+
+    <div class="bmv-calendar" style="background-image: url('./assets/images/meghan-holmes-779221-unsplash.dark.jpg')">
       <span class="bmv-title bmv-title-dark">График</span>
       <table>
         <thead>
@@ -265,7 +285,7 @@
     </div>
 
 
-    <div class="bmv-calendar bmv-calendar-compact" id="schedule" style="background-image: url('./assets/images/meghan-holmes-779221-unsplash.dark.jpg')">
+    <div class="bmv-calendar bmv-calendar-compact" style="background-image: url('./assets/images/meghan-holmes-779221-unsplash.dark.jpg')">
       <span class="bmv-title bmv-title-dark">График</span>
       <table>
         <thead>
@@ -361,6 +381,7 @@
             </tr>
         </tbody>
       </table>
+    </div>
     </div>
     <!-- Calendar end -->
 

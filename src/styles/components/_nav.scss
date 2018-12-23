@@ -1,15 +1,28 @@
+$nav-item-margin: 1.5em;
+
 .navbar {
   $logo-size: 12rem;
 
   z-index: 10;
-  height: $navbar-size;
-  margin-bottom: -$navbar-size;
+  position: absolute;
+  width: 100%;
+  min-height: $navbar-size;
   font-size: 14px;
   font-weight: 700;
+  padding: 1rem;
 
   & .navbar-brand {
     & img {
       width: $logo-size;
+    }
+  }
+
+  & .navbar-toggler {
+    color: $text-light;
+    outline: none;
+
+    & i {
+      font-size: 1.8em;
     }
   }
 
@@ -18,14 +31,20 @@
     margin-top: 2em;
 
     & .nav-item {
-      margin: 0 1.5em;
-      &:last-of-type, &:first-of-type {
+      margin: 0 $nav-item-margin;
+
+      &:last-of-type,
+      &:first-of-type {
         margin-left: auto;
       }
 
       & .nav-link {
         color: $text-light;
         letter-spacing: $letter-spacing-sm;
+
+        &.bmv-nav-link-mobile {
+          display: none;
+        }
       }
 
       & .bmv-social-icons-pack {
@@ -33,6 +52,44 @@
 
         & .fab {
           font-size: 1.4em;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .navbar {
+    & .navbar-collapse {
+      background-color: $c-dark;
+      min-height: 0;
+
+      & .navbar-nav {
+        padding: 3em;
+        margin-top: 0;
+        text-align: center;
+
+        & .nav-item {
+          font-size: 1.8em;
+          margin: 0;
+
+          &:last-of-type,
+          &:first-of-type {
+            margin-left: 0;
+          }
+
+          & .bmv-social-icons-pack {
+            margin-top: 1em;
+          }
+
+          & .nav-link {
+            &.bmv-nav-link-mobile {
+              display: block;
+            }
+            &.bmv-nav-link-desktop {
+              display: none;
+            }
+          }
         }
       }
     }
