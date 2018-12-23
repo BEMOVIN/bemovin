@@ -9,7 +9,8 @@ greet();
 
 AOS.init({
   duration: 700,
-  once: true
+  once: true,
+  disable: 'mobile'
 });
 
 $(document).ready(function () {
