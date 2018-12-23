@@ -1,6 +1,5 @@
 .bmv-activity-types {
   min-height: 42em;
-  max-height: 50em;
   max-width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -8,11 +7,15 @@
 
   .row {
     flex: 1;
-    $border-size: 10.4em; // depends on the height of the parent
 
     & .col {
       flex: 1;
       background-size: cover;
+    }
+
+    &:nth-of-type(2) {
+      display: none;
+      height: 10em;
     }
   }
 
@@ -31,6 +34,55 @@
         width: 16em;
         margin: 1em auto;
         padding: 1em;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .bmv-activity-types {
+    & .row {
+      &:nth-of-type(1) {
+        & .col {
+          &:nth-of-type(4) {
+            display: none;
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        & .col {
+          &:nth-of-type(1) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .bmv-activity-types {
+    & .row {
+      &:nth-of-type(1) {
+        & .col {
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            display: none;
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        display: flex;
+      }
+
+      &:nth-of-type(3) {
+        & .col {
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            display: none;
+          }
+        }
       }
     }
   }
