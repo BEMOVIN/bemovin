@@ -11,24 +11,45 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 
-  & .card {
-    border: 1px solid $c-dark;
+  & .card-deck {
+    justify-content: center;
 
-    & .card-img-top {
-      height: 20em;
-      background-size: cover;
-    }
+    & .card {
+      border: 1px solid $c-dark;
+      width: 100%;
+      min-width: 18em;
+      max-width: 18em;
+      margin: 1em;
 
-    & .card-body {
-      color: $text-light;
-      background-color: $c-dark;
-      text-align: center;
+      & .card-img-top {
+        height: 20em;
+        background-size: cover;
+      }
 
-      & .card-title {
-        text-transform: uppercase;
-        margin-bottom: 0;
+      & .card-body {
+        color: $text-light;
+        background-color: $c-dark;
+        text-align: center;
+
+        & .card-title {
+          text-transform: uppercase;
+          margin-bottom: 0;
+        }
       }
     }
   }
 
+}
+
+@include media-breakpoint-down(md) {
+  .bmv-team {
+    & .card-deck {
+      flex-flow: column nowrap;
+      align-items: center;
+
+      & .card {
+        max-width: 24em;
+      }
+    }
+  }
 }
