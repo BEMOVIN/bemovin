@@ -38,6 +38,14 @@ Will compile, minify and autoprefix Sass to CSS. Will Minify and uglify JavaScri
 
 After building for production you can take the `./public` directory and deploy it.
 
+- Deploy to GitHub Pages
+
+```
+yarn deploy
+```
+
+It will call the `build` script and it will use gh-pages tool to deploy the `./public` folder to GitHub Pages.
+
 ## Tutorial
 
 Visit my [blog entry](https://blog.bitsrc.io/build-a-website-with-modern-tooling-and-no-frameworks-a33e65099f9) where I go step-by-step on how to build this template from scratch.
