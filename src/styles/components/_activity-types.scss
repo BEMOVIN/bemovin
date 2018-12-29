@@ -5,17 +5,19 @@
   flex-flow: column nowrap;
   background-color: $c-dark;
 
+  $col-min-height: 20em;
   .row {
     flex: 1;
 
     & .col {
       flex: 1;
       background-size: cover;
+      min-height: $col-min-height;
     }
 
     &:nth-of-type(2) {
       display: none;
-      height: 10em;
+      height: $col-min-height;
     }
   }
 
