@@ -29,13 +29,20 @@
     text-align: center;
     color: $c-light;
 
+    & .bmv-activity-title {
+      font-weight: 500;
+    }
+
     & .bmv-activity-subtitle {
       font-size: 0.8em;
+      font-weight: 100;
+
       &.btn {
         border-radius: 30px;
         width: 16em;
         margin: 1em auto;
         padding: 1em;
+        font-weight: 500;
       }
     }
   }

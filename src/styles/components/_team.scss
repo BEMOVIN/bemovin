@@ -27,12 +27,16 @@
       }
 
       & .card-body {
-        color: $text-light;
+        color: lightgrey;
         background-color: $c-dark;
         text-align: center;
+        font-weight: 100;
 
         & .card-title {
+          color: $c-palette-accent-dark;
           text-transform: uppercase;
+          font-weight: 700;
+          font-size: 1.50rem;
         }
       }
     }
