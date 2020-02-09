@@ -8,6 +8,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+  .bmv-calendar-description {
+    color: $c-palette-accent-primary;
+    text-align: center;
+    margin-bottom: 2em;
+    display: block;
+  }
+
   & table {
     & th, & td {
       padding: 1.5em;
