@@ -1,18 +1,20 @@
-import {
-  greet
-} from './utils';
+import * as Utils from './utils';
+import { Templates } from './templates';
 import 'bootstrap';
 import $ from 'jquery';
 import AOS from 'aos';
 
-greet();
+Templates.load();
+Utils.greet();
 
+// configure annimations
 AOS.init({
   duration: 700,
   once: true,
   disable: 'mobile'
 });
 
+// configure scroll on the navigation
 $(document).ready(function () {
   $("a").on('click', function (event) {
     if (this.hash !== "") {

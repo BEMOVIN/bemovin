@@ -35,6 +35,10 @@ module.exports = {
     // will be created
     rules: [
       {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
         // Look for JavaScript files and apply the babel-loader
         // excluding the './node_modules' directory. It uses the
         // configuration in `.babelrc`
@@ -93,7 +97,7 @@ module.exports = {
               // and when generating the CSS file, it will be outputted
               // as url(../images/venice-italy.jpg), which is relative
               // to /styles/main.css
-              publicPath: '../images',
+              publicPath: 'assets/images/',
 
               // When this option is 'true', the loader will emit the
               // image to output.path
