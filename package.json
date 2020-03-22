@@ -5,7 +5,7 @@
   "main": "main.js",
   "author": "Esau Silva",
   "license": "MIT",
-  "homepage": "https://bemovin.github.io/bemovin",
+  "homepage": "https://bemovin.bg/",
   "scripts": {
     "dev:assets": "webpack --watch",
     "dev:start": "live-server --open=./public/ --host=0.0.0.0 --watch=./public/",
