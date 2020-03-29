@@ -1,0 +1,20 @@
+.bmv-gallery {
+  background-color: $c-dark;
+  padding: 1em 1em;
+  $height-img-min: 16em;
+  $height-img-max: 20em;
+  & .bmv-gallery-img {
+    margin: 0.4em;
+    min-height: $height-img-min;
+    max-height: $height-img-max;
+    min-width: 10em;
+    overflow: hidden;
+  }
+  & img {
+    min-height: $height-img-min;
+    max-height: $height-img-max;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

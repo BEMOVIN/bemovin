@@ -3,6 +3,7 @@ import { Templates } from './templates';
 import 'bootstrap';
 import $ from 'jquery';
 import AOS from 'aos';
+import 'lightbox2'
 
 Templates.load();
 Utils.greet();

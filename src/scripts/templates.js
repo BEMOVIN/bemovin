@@ -7,6 +7,7 @@ import calendar from '../templates/05_calendar.html';
 import team from '../templates/06_team.html';
 import prices from '../templates/07_prices.html';
 import contacts from '../templates/08_contacts.html';
+import gallery from '../templates/09_gallery.html';
 
 export class Templates {
 
@@ -22,6 +23,7 @@ export class Templates {
     ${team}
     ${prices}
     ${contacts}
+    ${gallery}
     `;
     document.body.innerHTML = page;
   }

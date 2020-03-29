@@ -88,7 +88,9 @@ module.exports = {
             options: {
               // The image will be named with the original name and
               // extension
-              name: '[name].[ext]',
+              name: '[path][name].[ext]',
+              context: 'public/assets/images',
+
 
               // Indicates where the images are stored and will use
               // this path when generating the CSS files.

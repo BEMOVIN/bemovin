@@ -7,6 +7,7 @@ $theme-colors: (
 );
 @import "~bootstrap/scss/bootstrap";
 @import "~aos/src/sass/aos.scss";
+@import "~lightbox2/dist/css/lightbox.min.css";
 
 @import './components/animations';
 @import './components/social-media';
@@ -21,6 +22,7 @@ $theme-colors: (
 @import './components/prices';
 @import './components/contacts';
 @import './components/footer';
+@import './components/gallery';
 
 @import './components/fonts';
 
