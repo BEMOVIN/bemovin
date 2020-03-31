@@ -12,8 +12,8 @@ export class Gallery {
         galleryElem.append(
           `
           <div class="bmv-gallery-img">
-            <a href="../../public/assets/images/gallery/slide-${slide}/${imgName}.jpg" data-lightbox="bemovin">
-              <img src="../../public/assets/images/gallery/slide-${slide}/${imgName}.thmb.jpg" alt="gallery image"
+            <a href="assets/images/gallery/slide-${slide}/${imgName}.jpg" data-lightbox="bemovin">
+              <img src="assets/images/gallery/slide-${slide}/${imgName}.thmb.jpg" alt="gallery image"
                 class="image-responsive">
             </a>
           </div>
