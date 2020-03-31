@@ -1,12 +1,15 @@
 import * as Utils from './utils';
 import { Templates } from './templates';
+import { Gallery } from './gallery';
 import 'bootstrap';
 import $ from 'jquery';
 import AOS from 'aos';
 import 'lightbox2'
 
-Templates.load();
 Utils.greet();
+
+Templates.load();
+Gallery.load();
 
 // configure annimations
 AOS.init({

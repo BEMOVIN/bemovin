@@ -3,6 +3,14 @@
   padding: 1em 1em;
   $height-img-min: 16em;
   $height-img-max: 20em;
+
+  & .bmv-gallery-imgs {
+    margin: 0 auto;
+    max-width: 80em;
+    min-width: 16em;
+    width: 100%;
+  }
+
   & .bmv-gallery-img {
     margin: 0.4em;
     min-height: $height-img-min;
@@ -13,8 +21,9 @@
   & img {
     min-height: $height-img-min;
     max-height: $height-img-max;
+    transition: transform 2s ease;
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.2);
     }
   }
 }
