@@ -3,9 +3,7 @@ import { BootstrapVue } from 'bootstrap-vue'
 import AOS from 'aos'
 import App from './App.vue'
 
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-import 'aos/dist/aos.css'
+import './main.scss'
 
 Vue.config.productionTip = false
 
@@ -15,4 +13,8 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-AOS.init()
+AOS.init({
+  duration: 700,
+  once: true,
+  disable: 'mobile'
+})

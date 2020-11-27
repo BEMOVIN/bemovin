@@ -1,0 +1,74 @@
+@import './custom.scss';
+$theme-colors: (
+  'primary': $c-palette-primary,
+  'danger': $c-palette-sec-primary,
+  'success': $c-palette-accent-dark
+);
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+@import '~aos/src/sass/aos.scss';
+
+body {
+  font-family: $font-family-sans-serif;
+  background-color: $c-light-dark;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.bmv-title {
+  display: block;
+  color: $c-palette-primary;
+  letter-spacing: $letter-spacing-xs;
+  font-size: 2.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+
+  &.bmv-title-dark {
+    color: $c-palette-accent-dark;
+  }
+}
+
+.bmv-subtitle {
+  display: block;
+  color: $c-palette-light;
+  letter-spacing: $letter-spacing-xs;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.bmv-message {
+  display: block;
+  font-size: 1.4em;
+  text-align: center;
+  letter-spacing: $letter-spacing-xxs;
+}
+
+.bmv-text-logo {
+  font-style: italic;
+  font-weight: 700;
+
+  & .bmv-text-logo-accent {
+    color: $c-palette-primary;
+  }
+}
+
+.bmv-text-letter-spacing-xxs {
+  letter-spacing: $letter-spacing-xs;
+}
+
+.bmv-text-letter-spacing-xs {
+  letter-spacing: $letter-spacing-xs;
+}
+
+.bmv-text-letter-spacing-sm {
+  letter-spacing: $letter-spacing-sm;
+}

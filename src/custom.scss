@@ -1,0 +1,50 @@
+@font-face {
+  font-family: GothaPro;
+  src: url('./assets/fonts/gotham_pro/GothaProMed.otf') format('opentype');
+}
+
+@font-face {
+  font-family: GothaPro;
+  font-weight: bold;
+  src: url('./assets/fonts/gotham_pro/GothaProBol.otf') format('opentype');
+}
+
+@font-face {
+  font-family: GothaPro;
+  font-weight: italic;
+  src: url('./assets/fonts/gotham_pro/GothaProIta.otf') format('opentype');
+}
+
+@mixin transition($time) {
+  transition: all $time ease;
+}
+
+@mixin default-transition() {
+  @include transition(0.4s);
+}
+
+$navbar-size: 8em;
+
+$letter-spacing-xxs: 0.02em;
+$letter-spacing-xs: 0.04em;
+$letter-spacing-sm: 0.08em;
+
+$text-light: white;
+$text-dark: #212121;
+$text-light-dark: #757575;
+
+$c-light: white;
+$c-light-dark: #ececec;
+$c-dark: #131415;
+
+$c-palette-light: #70aecb;
+$c-palette-primary: #008db1;
+$c-palette-dark: #23737c;
+
+$c-palette-accent-light: #faeaab;
+$c-palette-accent-primary: #f1ca13;
+$c-palette-accent-dark: #e5ac19;
+
+$c-palette-sec-light: #8077b2;
+$c-palette-sec-primary: #665ca0;
+$c-palette-sec-dark: #463989;
