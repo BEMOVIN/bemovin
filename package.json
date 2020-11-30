@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.19.0",
     "core-js": "^3.6.5",
     "date-fns": "^2.16.1",
+    "date-fns-tz": "^1.0.12",
     "vue": "^2.6.12",
     "vue-cool-lightbox": "^2.6.9",
     "vue-scrollto": "^2.20.0"
