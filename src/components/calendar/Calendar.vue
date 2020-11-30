@@ -4,7 +4,7 @@
       class="bmv-calendar"
       :style="{ 'background-image': `url(${bgImage})` }"
     >
-      <span class="bmv-title bmv-title-dark">Седмичен График</span>
+      <span class="bmv-title bmv-title-dark">График</span>
       <div class="btn-group mx-auto mb-5 bmv-week-selector">
         <button
           class="btn btn-primary btn-sm"
@@ -51,7 +51,7 @@
       class="bmv-calendar bmv-calendar-compact"
       style="background-image: url('./assets/images/meghan-holmes-779221-unsplash.dark.jpg')"
     >
-      <span class="bmv-title bmv-title-dark">Седмичен График</span>
+      <span class="bmv-title bmv-title-dark">График</span>
 
       <template v-if="!loading">
         <div class="btn-group mx-auto mb-2 bmv-week-selector">
