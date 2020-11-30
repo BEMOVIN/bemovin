@@ -53,23 +53,23 @@
     >
       <span class="bmv-title bmv-title-dark">График</span>
 
+      <div class="btn-group mx-auto mb-2 bmv-week-selector">
+        <button
+          class="btn btn-primary btn-sm"
+          :class="{ active: weekIndex === 0 }"
+          @click="loadForWeekIndex(0)"
+        >
+          Тази седмица
+        </button>
+        <button
+          class="btn btn-primary btn-sm"
+          :class="{ active: weekIndex === 1 }"
+          @click="loadForWeekIndex(1)"
+        >
+          Следващата седмица
+        </button>
+      </div>
       <template v-if="!loading">
-        <div class="btn-group mx-auto mb-2 bmv-week-selector">
-          <button
-            class="btn btn-primary btn-sm"
-            :class="{ active: weekIndex === 0 }"
-            @click="loadForWeekIndex(0)"
-          >
-            Тази седмица
-          </button>
-          <button
-            class="btn btn-primary btn-sm"
-            :class="{ active: weekIndex === 1 }"
-            @click="loadForWeekIndex(1)"
-          >
-            Следващата седмица
-          </button>
-        </div>
         <table
           v-for="(eventsByDay, eventsByDayIdx) of mobileCalendarEvents"
           :key="eventsByDayIdx"
@@ -231,6 +231,9 @@ export default {
       return ordered
     },
     async loadForWeekIndex(index) {
+      if (index === this.weekIndex) {
+        return
+      }
       this.weekIndex = index
       const date = addDays(this.currentDate, index * this.numberOfDays)
       return this.loadEvents(date)
@@ -259,6 +262,7 @@ export default {
 
   & .bmv-week-selector .btn {
     text-transform: uppercase;
+    min-width: 13em;
   }
 
   & table {
