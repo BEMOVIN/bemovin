@@ -28,113 +28,13 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>07:30 - 08:30</td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
+          <tr v-for="time of Object.keys(calendarEvents)" :key="time">
+            <td>{{ time }}</td>
+            <td v-for="(summary, index) of calendarEvents[time]" :key="index">
+              <span v-if="summary" class="bmv-calendar-cell-title">{{
+                summary
+              }}</span>
             </td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>08:00 - 09:00</td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>10:30 - 11:30</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-          </tr>
-          <tr>
-            <td>12:30 - 13:30</td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>13:00 - 14:00</td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>14:30 - 15:30</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-          </tr>
-          <tr>
-            <td>17:30 - 18:30</td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td></td>
-            <td></td>
           </tr>
         </tbody>
       </table>
@@ -145,187 +45,22 @@
       style="background-image: url('./assets/images/meghan-holmes-779221-unsplash.dark.jpg')"
     >
       <span class="bmv-title bmv-title-dark">График</span>
-      <table>
-        <thead>
+      <table
+        v-for="eventsByDay of mobileCalendarEvents"
+        :key="eventsByDay.dayOfWeek"
+      >
+        <thead v-if="eventsByDay.events.length > 0">
           <tr>
-            <th>Понеделник</th>
+            <th>{{ eventsByDay.dayOfWeek }}</th>
             <th></th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
+        <tbody v-if="eventsByDay.events.length > 0">
+          <tr v-for="(event, index) in eventsByDay.events" :key="index">
             <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
+              <span class="bmv-calendar-cell-title">{{ event.summary }}</span>
             </td>
-            <td>07:30 - 08:30</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>12:30 - 13:30</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>17:30 - 18:30</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th>Вторник</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>08:00 - 09:00</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>13:00 - 14:00</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>17:30 - 18:30</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th>Сряда</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>07:30 - 08:30</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>12:30 - 13:30</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>17:30 - 18:30</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th>Четвъртък</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>08:00 - 09:00</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>13:00 - 14:00</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>17:30 - 18:30</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th>Петък</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>07:30 - 08:30</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>12:30 - 13:30</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>17:30 - 18:30</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th>Събота</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>10:30 - 11:30</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>14:30 - 15:30</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <thead>
-          <tr>
-            <th>Неделя</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>10:30 - 11:30</td>
-          </tr>
-          <tr>
-            <td>
-              <span class="bmv-calendar-cell-title">Групова тренировка</span>
-            </td>
-            <td>14:30 - 15:30</td>
+            <td>{{ event.time }}</td>
           </tr>
         </tbody>
       </table>
@@ -335,17 +70,166 @@
 
 <script>
 import bgImage from '../assets/images/meghan-holmes-779221-unsplash.dark.jpg'
+import { format, getDay } from 'date-fns'
+import localeBg from 'date-fns/locale/bg'
+
 export default {
   name: 'Calendar',
   data() {
-    return { bgImage }
+    return {
+      bgImage,
+      events: [
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 23, 7, 30),
+          end: new Date(2020, 10, 23, 8, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 25, 7, 30),
+          end: new Date(2020, 10, 25, 8, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 27, 7, 30),
+          end: new Date(2020, 10, 27, 8, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 24, 8, 0),
+          end: new Date(2020, 10, 24, 9, 0)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 26, 8, 0),
+          end: new Date(2020, 10, 26, 9, 0)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 28, 10, 30),
+          end: new Date(2020, 10, 28, 11, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 29, 10, 30),
+          end: new Date(2020, 10, 29, 11, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 23, 12, 30),
+          end: new Date(2020, 10, 23, 13, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 25, 12, 30),
+          end: new Date(2020, 10, 25, 13, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 27, 12, 30),
+          end: new Date(2020, 10, 27, 13, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 24, 13, 0),
+          end: new Date(2020, 10, 24, 14, 0)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 26, 13, 0),
+          end: new Date(2020, 10, 26, 14, 0)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 28, 14, 30),
+          end: new Date(2020, 10, 28, 15, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 29, 14, 30),
+          end: new Date(2020, 10, 29, 15, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 23, 17, 30),
+          end: new Date(2020, 10, 23, 18, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 24, 17, 30),
+          end: new Date(2020, 10, 24, 18, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 25, 17, 30),
+          end: new Date(2020, 10, 25, 18, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 26, 17, 30),
+          end: new Date(2020, 10, 26, 18, 30)
+        },
+        {
+          summary: 'Групова тренировка',
+          start: new Date(2020, 10, 27, 17, 30),
+          end: new Date(2020, 10, 27, 18, 30)
+        }
+      ],
+      numberOfDays: 7
+    }
+  },
+  computed: {
+    // Assume:
+    // * Events are sorted by hours; there is only one event per hour.
+    // * Events start from Monday and end Sunday.
+    // * Event starts and ends in the same day.
+    calendarEvents() {
+      const calendarEvents = {}
+      for (const event of this.events) {
+        const time = this.buildTime(event)
+        const dayOfWeekIdx = this.getDayOfWeekIndex(event)
+        if (!calendarEvents[time]) {
+          calendarEvents[time] = Array(this.numberOfDays).fill('')
+        }
+        calendarEvents[time][dayOfWeekIdx] = event.summary
+      }
+      return calendarEvents
+    },
+    mobileCalendarEvents() {
+      const mobileCalendarEvents = Array(this.numberOfDays)
+      for (const event of this.events) {
+        const time = this.buildTime(event)
+        const dayOfWeekIdx = this.getDayOfWeekIndex(event)
+        if (!mobileCalendarEvents[dayOfWeekIdx]) {
+          const dayOfWeek = format(event.start, 'EEEE', { locale: localeBg })
+          mobileCalendarEvents[dayOfWeekIdx] = {
+            dayOfWeek,
+            events: []
+          }
+        }
+        mobileCalendarEvents[dayOfWeekIdx].events.push({
+          summary: event.summary,
+          time
+        })
+      }
+      return mobileCalendarEvents
+    }
+  },
+  methods: {
+    buildTime(event) {
+      const startHour = format(event.start, 'HH:mm')
+      const endHour = format(event.end, 'HH:mm')
+      return `${startHour} - ${endHour}`
+    },
+    getDayOfWeekIndex(event) {
+      return (getDay(event.start) - 1 + this.numberOfDays) % this.numberOfDays
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
 @import '../mixins';
-
 .bmv-calendar {
   width: 100%;
   height: 100%;

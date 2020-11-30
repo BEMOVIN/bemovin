@@ -13,6 +13,7 @@
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.19.0",
     "core-js": "^3.6.5",
+    "date-fns": "^2.16.1",
     "vue": "^2.6.12",
     "vue-cool-lightbox": "^2.6.9",
     "vue-scrollto": "^2.20.0"
