@@ -49,7 +49,7 @@
 
     <div
       class="bmv-calendar bmv-calendar-compact"
-      style="background-image: url('./assets/images/meghan-holmes-779221-unsplash.dark.jpg')"
+      :style="{ 'background-image': `url(${bgImage})` }"
     >
       <span class="bmv-title bmv-title-dark">График</span>
 
