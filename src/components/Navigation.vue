@@ -1,125 +1,38 @@
 <template>
-  <nav class="navbar navbar-expand-xl">
-    <a class="navbar-brand" href="#">
+  <b-navbar toggleable="xl" type="dark">
+    <b-navbar-brand href="#">
       <img src="./../assets/images/logo.png" alt="" />
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-    </button>
+    </b-navbar-brand>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav justify-content-end text-uppercase">
-        <li class="nav-item">
-          <a
-            class="nav-link bmv-nav-link-desktop"
-            href="#"
-            v-scroll-to="'#about'"
-            >За нас</a
-          >
-          <a
-            class="nav-link bmv-nav-link-mobile"
-            href="#"
-            v-scroll-to="'#about'"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            >За нас</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link bmv-nav-link-desktop"
-            href="#"
-            v-scroll-to="'#activities'"
-            >Тренировки</a
-          >
-          <a
-            class="nav-link bmv-nav-link-mobile"
-            href="#"
-            v-scroll-to="'#activities'"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            >Тренировки</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link bmv-nav-link-desktop"
-            href="#"
-            v-scroll-to="'#schedule'"
-            >График</a
-          >
-          <a
-            class="nav-link bmv-nav-link-mobile"
-            href="#"
-            v-scroll-to="'#schedule'"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            >График</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link bmv-nav-link-desktop"
-            href="#"
-            v-scroll-to="'#team'"
-            >Екип</a
-          >
-          <a
-            class="nav-link bmv-nav-link-mobile"
-            href="#"
-            v-scroll-to="'#team'"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            >Екип</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link bmv-nav-link-desktop"
-            href="#"
-            v-scroll-to="'#prices'"
-            >Цени</a
-          >
-          <a
-            class="nav-link bmv-nav-link-mobile"
-            href="#"
-            v-scroll-to="'#prices'"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            >Цени</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link bmv-nav-link-desktop"
-            href="#"
-            v-scroll-to="'#contacts'"
-            >Контакти</a
-          >
-          <a
-            class="nav-link bmv-nav-link-mobile"
-            href="#"
-            v-scroll-to="'#contacts'"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            >Контакти</a
-          >
-        </li>
-        <li class="nav-item">
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav class="text-uppercase d-flex justify-content-center">
+        <b-nav-item class="mx-3 text-nowrap" href="#" v-scroll-to="'#about'"
+          >За нас</b-nav-item
+        >
+        <b-nav-item
+          class="mx-3 text-nowrap"
+          href="#"
+          v-scroll-to="'#activities'"
+          >Тренировки</b-nav-item
+        >
+        <b-nav-item class="mx-3 text-nowrap" href="#" v-scroll-to="'#schedule'"
+          >График</b-nav-item
+        >
+        <b-nav-item class="mx-3 text-nowrap" href="#" v-scroll-to="'#team'"
+          >Екип</b-nav-item
+        >
+        <b-nav-item class="mx-3 text-nowrap" href="#" v-scroll-to="'#prices'"
+          >Цени</b-nav-item
+        >
+        <b-nav-item class="mx-3 text-nowrap" href="#" v-scroll-to="'#contacts'"
+          >Контакти</b-nav-item
+        >
+      </b-navbar-nav>
+
+      <b-navbar-nav class="bmv-social">
+        <b-nav-item>
           <div class="bmv-social-icons-pack">
             <a href="https://www.facebook.com/bemovinsport"
               ><i class="fab fa-facebook-f"></i
@@ -132,10 +45,10 @@
               ><i class="fab fa-youtube"></i
             ></a>
           </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        </b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
@@ -240,7 +153,18 @@ $nav-item-margin: 1.5em;
           }
         }
       }
+
+      &.show {
+        & .bmv-social {
+          max-width: 100%;
+        }
+      }
     }
   }
+}
+.bmv-social {
+  $width: 13rem;
+  min-width: $width;
+  max-width: $width;
 }
 </style>
