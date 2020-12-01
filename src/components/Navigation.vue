@@ -4,7 +4,9 @@
       <img src="./../assets/images/logo.png" alt="" />
     </b-navbar-brand>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <b-navbar-toggle target="nav-collapse">
+      <template><i class="fas fa-bars"></i></template>
+    </b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="text-uppercase d-flex justify-content-center">
@@ -153,12 +155,10 @@ $nav-item-margin: 1.5em;
           }
         }
       }
+    }
 
-      &.show {
-        & .bmv-social {
-          max-width: 100%;
-        }
-      }
+    .bmv-social {
+      max-width: 100%;
     }
   }
 }
