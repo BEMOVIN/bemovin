@@ -33,21 +33,17 @@
         >
       </b-navbar-nav>
 
-      <b-navbar-nav class="bmv-social">
-        <b-nav-item>
-          <div class="bmv-social-icons-pack">
-            <a href="https://www.facebook.com/bemovinsport"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a href="https://www.instagram.com/bemovinsport"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.youtube.com/channel/UCchRJiyYsgQl5oGdagyqk9w/featured"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </div>
-        </b-nav-item>
+      <b-navbar-nav class="bmv-social bmv-social-icons-pack">
+        <b-nav-item href="https://www.facebook.com/bemovinsport"
+          ><i class="fab fa-facebook-f"></i
+        ></b-nav-item>
+        <b-nav-item href="https://www.instagram.com/bemovinsport"
+          ><i class="fab fa-instagram"></i
+        ></b-nav-item>
+        <b-nav-item
+          href="https://www.youtube.com/channel/UCchRJiyYsgQl5oGdagyqk9w/featured"
+          ><i class="fab fa-youtube"></i
+        ></b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -109,13 +105,18 @@ $nav-item-margin: 1.5em;
           display: none;
         }
       }
+    }
 
-      & .bmv-social-icons-pack {
-        align-self: flex-end;
+    &.bmv-social {
+      & .nav-item {
+        margin: 0 0.4em;
+      }
+      & a {
+        padding: 0;
+      }
 
-        & .fab {
-          font-size: 1.4em;
-        }
+      & .fab {
+        font-size: 1.4em;
       }
     }
   }
@@ -141,10 +142,6 @@ $nav-item-margin: 1.5em;
             margin-left: 0;
           }
 
-          & .bmv-social-icons-pack {
-            margin-top: 1em;
-          }
-
           & .nav-link {
             &.bmv-nav-link-mobile {
               display: block;
@@ -159,10 +156,13 @@ $nav-item-margin: 1.5em;
 
     .bmv-social {
       max-width: 100%;
+      flex-flow: row nowrap;
+      justify-content: center;
     }
   }
 }
 .bmv-social {
+  justify-content: flex-end;
   $width: 13rem;
   min-width: $width;
   max-width: $width;
