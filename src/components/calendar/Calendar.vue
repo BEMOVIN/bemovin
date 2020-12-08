@@ -26,8 +26,8 @@
           <tr>
             <th></th>
             <th v-for="dayDate of weekDays" :key="dayDate.day">
-              {{ dayDate.day }}<br />
-              <div class="bmv-date mt-2">{{ dayDate.date }}</div>
+              <div class="bmv-date mb-2">{{ dayDate.date }}</div>
+              <span>{{ dayDate.day }}</span>
             </th>
           </tr>
         </thead>
@@ -160,7 +160,7 @@ export default {
       return mobileCalendarEvents
     },
     weekDays() {
-      const now = utcToZonedTime(new Date(), 'Europe/Sofia')
+      const now = addDays(this.currentDate, this.numberOfDays * this.weekIndex)
       const startOfWeekDate = startOfWeek(now, { weekStartsOn: 1 })
       const weekDays = []
       for (let i = 0; i < this.numberOfDays; i++) {
@@ -247,7 +247,7 @@ export default {
 .bmv-calendar {
   width: 100%;
   height: 100%;
-  min-height: 38em;
+  min-height: 46em;
   padding: 6em;
   background-color: $c-dark;
   background-size: cover;
@@ -258,6 +258,7 @@ export default {
 
   & .bmv-date {
     font-size: 0.8em;
+    color: $c-palette-accent-primary;
   }
 
   & .bmv-week-selector .btn {
