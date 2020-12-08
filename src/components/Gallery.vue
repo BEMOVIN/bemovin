@@ -65,10 +65,22 @@ export default {
     importAllImages(r) {
       // NOTE: The image collection relies on the natural sorting and naming convention of the filenames.
       let thumbnailIdx = 0
+      const imageMap = {}
       for (const key of r.keys()) {
         const imagePath = r(key)
+        const fileId = key.substring(key.indexOf('/') + 1, key.indexOf('/') + 5)
         if (imagePath.indexOf('thmb') === -1) {
-          this.images.push(imagePath)
+          if (!imageMap[fileId]) {
+            imageMap[fileId] = { src: imagePath }
+          } else {
+            imageMap[fileId]['src'] = imagePath
+          }
+        } else if (imagePath.indexOf('thmb.xs') !== -1) {
+          if (!imageMap[fileId]) {
+            imageMap[fileId] = { thumb: imagePath }
+          } else {
+            imageMap[fileId]['thumb'] = imagePath
+          }
         } else {
           const slideNumText = key.substring(
             key.indexOf('./') + 2,
@@ -86,6 +98,8 @@ export default {
           thumbnailIdx++
         }
       }
+
+      this.images = Object.values(imageMap)
     }
   }
 }
