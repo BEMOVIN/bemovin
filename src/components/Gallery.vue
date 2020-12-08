@@ -12,9 +12,7 @@
         :key="slideIdx"
       >
         <template #img>
-          <div
-            class="d-flex flex-wrap justify-content-center bmv-gallery-imgs p-5"
-          >
+          <div class="d-flex bmv-gallery-imgs">
             <div
               class="bmv-gallery-img"
               v-for="thmb in slideImages"
@@ -106,7 +104,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../custom';
+@import '../mixins';
 
 .bmv-gallery {
   background-color: $c-dark;
@@ -116,9 +114,12 @@ export default {
 
   & .bmv-gallery-imgs {
     margin: 0 auto;
+    padding: 3em;
     max-width: 80em;
     min-width: 16em;
     width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   & .bmv-gallery-img {
@@ -134,6 +135,26 @@ export default {
     transition: transform 2s ease;
     &:hover {
       transform: scale(1.2);
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .bmv-gallery {
+    & .bmv-gallery-imgs {
+      padding: 2em 1em;
+
+      & .bmv-gallery-img {
+        min-height: 5em;
+        max-height: 5em;
+        max-width: 7em;
+        min-width: unset;
+
+        & img {
+          min-height: 5em;
+          max-height: 5em;
+        }
+      }
     }
   }
 }

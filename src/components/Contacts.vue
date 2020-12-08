@@ -163,4 +163,18 @@ export default {
     }
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .bmv-contacts {
+    & .bmv-contacts-content {
+      & .bmv-contacts-map {
+        min-width: 16em;
+      }
+
+      & .bmv-contacts-info {
+        padding: 2em 1em;
+      }
+    }
+  }
+}
 </style>
