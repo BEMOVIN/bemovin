@@ -27,7 +27,7 @@
             <th></th>
             <th v-for="dayDate of weekDays" :key="dayDate.day">
               <div class="bmv-date mb-2">{{ dayDate.date }}</div>
-              <span>{{ dayDate.day }}</span>
+              <span class="bmv-day-of-week">{{ dayDate.day }}</span>
             </th>
           </tr>
         </thead>
@@ -77,10 +77,12 @@
           <thead v-if="showMobileCalendarDay(eventsByDay)">
             <tr>
               <th>
-                {{ weekDaysMap[eventsByDay.dayOfWeek].day }}
                 <div class="bmv-date mt-1">
                   {{ weekDaysMap[eventsByDay.dayOfWeek].date }}
                 </div>
+                <span class="bmv-day-of-week">{{
+                  weekDaysMap[eventsByDay.dayOfWeek].day
+                }}</span>
               </th>
               <th></th>
             </tr>
@@ -167,7 +169,7 @@ export default {
         const date = addDays(startOfWeekDate, i)
         weekDays.push({
           day: format(date, 'EEEE', { locale }),
-          date: format(date, 'do MMMM', { locale })
+          date: format(date, 'dd.MM', { locale })
         })
       }
       return weekDays
@@ -257,8 +259,12 @@ export default {
   flex-flow: column nowrap;
 
   & .bmv-date {
-    font-size: 0.8em;
+    font-size: 1.6em;
     color: $c-palette-accent-primary;
+  }
+
+  & .bmv-day-of-week {
+    font-size: 0.8em;
   }
 
   & .bmv-week-selector .btn {
