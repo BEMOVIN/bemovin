@@ -85,16 +85,6 @@
             да ни помогнат да повишим своята кардио и силова издръжливост.
           </p>
         </div>
-        <div class="col bmv-activities-item">
-          <i class="fas fa-infinity bmv-activities-icon"></i>
-          <h5 class="bmv-activities-title">Mobility Class</h5>
-          <p class="bmv-activities-description">
-            Целта на този клас е да ви даде свобода на движение, ще ви дадем
-            идеи как да подобрите мобилността, да намалите сковаността на
-            гръбначния стълб съпътстващ повечето седящи професии и да добиете
-            представа за възможностите на тялото си.
-          </p>
-        </div>
       </div>
     </div>
   </div>
