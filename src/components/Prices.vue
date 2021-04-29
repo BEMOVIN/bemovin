@@ -17,7 +17,7 @@
             <div class="card-header">Карта 8</div>
             <div class="card-body">
               <h5 class="card-title">8 тренировки за месец</h5>
-              <h1 class="card-text bmv-price-label">60лв</h1>
+              <h1 class="card-text bmv-price-label">70лв</h1>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@
             <div class="card-header">Карта 12</div>
             <div class="card-body">
               <h5 class="card-title">12 тренировки за месец</h5>
-              <h1 class="card-text bmv-price-label">80лв</h1>
+              <h1 class="card-text bmv-price-label">90лв</h1>
             </div>
           </div>
         </div>
@@ -40,10 +40,10 @@
           class="col bmv-price-tag"
         >
           <div class="card">
-            <div class="card-header">Месечна</div>
+            <div class="card-header">Карта 16</div>
             <div class="card-body">
-              <h5 class="card-title">Неограничен за месец</h5>
-              <h1 class="card-text bmv-price-label">100лв</h1>
+              <h5 class="card-title">16 тренировки за месец</h5>
+              <h1 class="card-text bmv-price-label">120лв</h1>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
               <h5 class="card-title">
                 1 тренировка седмично в рамките на 1 месец
               </h5>
-              <h1 class="card-text bmv-price-label">80лв</h1>
+              <h1 class="card-text bmv-price-label">90лв</h1>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@
               <h5 class="card-title">
                 2 тренировки седмично в рамките на 1 месец
               </h5>
-              <h1 class="card-text bmv-price-label">130лв</h1>
+              <h1 class="card-text bmv-price-label">145лв</h1>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@
               <h5 class="card-title">
                 3 тренировки седмично в рамките на 1 месец
               </h5>
-              <h1 class="card-text bmv-price-label">170лв</h1>
+              <h1 class="card-text bmv-price-label">190лв</h1>
             </div>
           </div>
         </div>
