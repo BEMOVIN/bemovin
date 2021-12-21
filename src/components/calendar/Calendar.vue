@@ -123,7 +123,7 @@ export default {
       events: [],
       numberOfDays: 7,
       loading: false,
-      weekIndex: 0,
+      weekIndex: 0
     }
   },
   computed: {
@@ -154,15 +154,18 @@ export default {
           const dayOfWeek = format(event.start, 'EEEE', { locale })
           mobileCalendarEvents[dayOfWeekIdx] = {
             dayOfWeek,
-            events: [],
+            events: []
           }
         }
         mobileCalendarEvents[dayOfWeekIdx].events.push({
           summary: event.summary,
-          time,
+          time
         })
       }
       for (const calEvent of mobileCalendarEvents) {
+        if (!(calEvent && calEvent.events)) {
+          continue
+        }
         calEvent.events = calEvent.events.sort((a, b) =>
           a.time > b.time ? 1 : -1
         )
@@ -177,7 +180,7 @@ export default {
         const date = addDays(startOfWeekDate, i)
         weekDays.push({
           day: format(date, 'EEEE', { locale }),
-          date: format(date, 'dd.MM', { locale }),
+          date: format(date, 'dd.MM', { locale })
         })
       }
       return weekDays
@@ -187,7 +190,7 @@ export default {
         acc[weekDay.day] = weekDay
         return acc
       }, {})
-    },
+    }
   },
   mounted() {
     this.loadEvents(this.currentDate)
@@ -200,17 +203,17 @@ export default {
 
       const targetDate = utcToZonedTime(date, 'Europe/Sofia')
       const startOfWeekText = startOfWeek(targetDate, {
-        weekStartsOn: 1,
+        weekStartsOn: 1
       }).toISOString()
       const endOfWeekText = endOfWeek(targetDate, {
-        weekStartsOn: 1,
+        weekStartsOn: 1
       }).toISOString()
       const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${startOfWeekText}&timeMax=${endOfWeekText}`
       return this.$http
         .get(url)
-        .then((resp) => resp.data.items)
-        .then((rawEvents) => this.transformRawEvents(rawEvents))
-        .then((events) => (this.events = events))
+        .then(resp => resp.data.items)
+        .then(rawEvents => this.transformRawEvents(rawEvents))
+        .then(events => (this.events = events))
         .then(() => (this.loading = false))
     },
     buildTime(event) {
@@ -225,17 +228,17 @@ export default {
       return eventsByDay && eventsByDay.events && eventsByDay.events.length > 0
     },
     transformRawEvents(rawEvents) {
-      return rawEvents.map((event) => ({
+      return rawEvents.map(event => ({
         summary: event.summary,
         start: new Date(event.start.dateTime),
-        end: new Date(event.end.dateTime),
+        end: new Date(event.end.dateTime)
       }))
     },
     sortObjectKeys(unordered) {
       const ordered = {}
       Object.keys(unordered)
         .sort()
-        .forEach((key) => {
+        .forEach(key => {
           ordered[key] = unordered[key]
         })
       return ordered
@@ -247,8 +250,8 @@ export default {
       this.weekIndex = index
       const date = addDays(this.currentDate, index * this.numberOfDays)
       return this.loadEvents(date)
-    },
-  },
+    }
+  }
 }
 </script>
 
