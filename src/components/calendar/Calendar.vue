@@ -208,7 +208,7 @@ export default {
       const endOfWeekText = endOfWeek(targetDate, {
         weekStartsOn: 1
       }).toISOString()
-      const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${startOfWeekText}&timeMax=${endOfWeekText}`
+      const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarId}/events?key=${apiKey}&timeMin=${startOfWeekText}&timeMax=${endOfWeekText}&singleEvents=true`
       return this.$http
         .get(url)
         .then(resp => resp.data.items)
