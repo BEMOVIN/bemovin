@@ -52,25 +52,6 @@
         <div class="card" data-aos="fade-up" data-aos-delay="600">
           <div
             class="card-img-top"
-            :style="{ 'background-image': `url(${elizaPic})` }"
-          ></div>
-          <div class="card-body">
-            <h5 class="card-title">Елиза</h5>
-            <p class="card-text">
-              Елиза е нежната част на нашият екип. Взискателността и
-              отдадеността й към работата винаги са били приоритетни, а доброто
-              настроение по време на тренировка е гарантирано. Приветливата й
-              усмивка и добродушният й вид ще ви помогнат да се откъснете от
-              проблемите и да се почувствате в приятелска среда, докато
-              проливате кофи пот и заучавате на пръв поглед "леснички" движения,
-              но със сигурност Ели ще ви помогне да разкриете 101% от вашия
-              потенциал.
-            </p>
-          </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-delay="800">
-          <div
-            class="card-img-top"
             :style="{ 'background-image': `url(${pavelPic})` }"
           ></div>
           <div class="card-body">
