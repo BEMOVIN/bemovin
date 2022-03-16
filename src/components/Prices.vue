@@ -30,7 +30,7 @@
             <div class="card-header">Карта 12</div>
             <div class="card-body">
               <h5 class="card-title">12 тренировки за месец</h5>
-              <h1 class="card-text bmv-price-label">90лв</h1>
+              <h1 class="card-text bmv-price-label">100лв</h1>
             </div>
           </div>
         </div>
