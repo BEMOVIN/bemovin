@@ -14,10 +14,10 @@
           class="col bmv-price-tag"
         >
           <div class="card">
-            <div class="card-header">Карта 8</div>
+            <div class="card-header">Карта 4</div>
             <div class="card-body">
-              <h5 class="card-title">8 тренировки за месец</h5>
-              <h1 class="card-text bmv-price-label">80лв</h1>
+              <h5 class="card-title">4 тренировки за месец</h5>
+              <h1 class="card-text bmv-price-label">45лв</h1>
             </div>
           </div>
         </div>
@@ -27,10 +27,10 @@
           class="col bmv-price-tag"
         >
           <div class="card">
-            <div class="card-header">Карта 12</div>
+            <div class="card-header">Карта 8</div>
             <div class="card-body">
-              <h5 class="card-title">12 тренировки за месец</h5>
-              <h1 class="card-text bmv-price-label">100лв</h1>
+              <h5 class="card-title">8 тренировки за месец</h5>
+              <h1 class="card-text bmv-price-label">80лв</h1>
             </div>
           </div>
         </div>
@@ -40,10 +40,10 @@
           class="col bmv-price-tag"
         >
           <div class="card">
-            <div class="card-header">Карта 16</div>
+            <div class="card-header">Карта 12</div>
             <div class="card-body">
-              <h5 class="card-title">16 тренировки за месец</h5>
-              <h1 class="card-text bmv-price-label">130лв</h1>
+              <h5 class="card-title">12 тренировки за месец</h5>
+              <h1 class="card-text bmv-price-label">100лв</h1>
             </div>
           </div>
         </div>
