@@ -58,9 +58,10 @@ export default {
       text-align: center;
       text-decoration: none;
       color: $text-light;
-      margin: 0 0.5em;
+      margin: 0 0.2em;
 
-      $button-size: 2.7em;
+      font-size: 28px;
+      $button-size: 1.6em;
       border-radius: 50%;
       width: $button-size;
       height: $button-size;
