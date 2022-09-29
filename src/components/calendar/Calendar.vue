@@ -45,6 +45,7 @@
       <div v-else class="p-5 d-flex justify-content-center">
         <b-spinner type="grow" variant="primary"></b-spinner>
       </div>
+      <calendar-footer class="mt-auto" />
     </div>
 
     <div
@@ -101,6 +102,8 @@
       <div v-else class="p-5 d-flex justify-content-center">
         <b-spinner type="grow" variant="primary"></b-spinner>
       </div>
+
+      <calendar-footer class="mt-auto" />
     </div>
   </div>
 </template>
@@ -110,6 +113,7 @@ import bgImage from '../../assets/images/meghan-holmes-779221-unsplash.dark.jpg'
 import { format, getDay, startOfWeek, endOfWeek, addDays } from 'date-fns'
 import { utcToZonedTime } from 'date-fns-tz'
 import locale from 'date-fns/locale/bg'
+import CalendarFooter from './CalendarFooter.vue'
 
 // Assume:
 // * There is only one event per hour.
@@ -117,6 +121,7 @@ import locale from 'date-fns/locale/bg'
 // * Event starts and ends in the same day.
 export default {
   name: 'Calendar',
+  components: { CalendarFooter },
   data() {
     return {
       bgImage,
