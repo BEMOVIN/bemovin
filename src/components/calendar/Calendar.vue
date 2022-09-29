@@ -45,7 +45,7 @@
       <div v-else class="p-5 d-flex justify-content-center">
         <b-spinner type="grow" variant="primary"></b-spinner>
       </div>
-      <calendar-footer class="mt-auto mt-4" />
+      <calendar-footer class="mt-auto" />
     </div>
 
     <div
@@ -103,7 +103,7 @@
         <b-spinner type="grow" variant="primary"></b-spinner>
       </div>
 
-      <calendar-footer class="mt-auto mt-4" />
+      <calendar-footer class="mt-auto" />
     </div>
   </div>
 </template>

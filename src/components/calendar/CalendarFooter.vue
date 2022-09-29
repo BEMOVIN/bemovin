@@ -1,14 +1,14 @@
 <template>
   <div class="calendar-footer">
     <div class="calendar-footer-contact-us">
-      <h5 class="mb-2">
+      <h5 class="mt-4 mb-2">
         Всичките ни класове са с предварително запазване на място. Пишете ни!
       </h5>
       <div>
         <a href="https://m.me/bemovinsport"
           ><i class="fab fa-facebook-messenger"></i
         ></a>
-        <a v-if="isMobile" href="instagram://user?username=USERNAME"
+        <a v-if="isMobile" href="instagram://user?username=bemovinsport"
           ><i class="fab fa-instagram"></i
         ></a>
         <a v-else href="https://www.instagram.com/bemovinsport"
