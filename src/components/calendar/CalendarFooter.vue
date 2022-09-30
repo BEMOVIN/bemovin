@@ -1,7 +1,7 @@
 <template>
   <div class="calendar-footer">
     <div class="calendar-footer-contact-us">
-      <h5 class="mt-4 mb-2">
+      <h5 class="mt-5 mb-4">
         Всичките на класове са с предварително записване. Пишете ни!
       </h5>
       <div>
