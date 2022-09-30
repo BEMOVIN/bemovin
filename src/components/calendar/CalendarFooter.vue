@@ -2,7 +2,7 @@
   <div class="calendar-footer">
     <div class="calendar-footer-contact-us">
       <h5 class="mt-4 mb-2">
-        Всичките ни класове са с предварително запазване на място. Пишете ни!
+        Всичките на класове са с предварително записване. Пишете ни!
       </h5>
       <div>
         <a href="https://m.me/bemovinsport"
@@ -29,8 +29,8 @@
     </p>
     <p class="text-sm mt-2">
       Карти <strong>Coolfit</strong> покриват изцяло достъпът до STRENGTH &
-      SKILL CLASS и CONDITIONING CLASS и с доплащане 10лв за HANDSTAND PRACTICE
-      и BODY IN MOTION
+      SKILL CLASS и CONDITIONING CLASS и с доплащане 8лв за HANDSTAND PRACTICE и
+      BODY IN MOTION
     </p>
   </div>
 </template>
