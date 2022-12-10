@@ -73,10 +73,9 @@
 </template>
 
 <script>
-import bgImage from '../assets/images/victor-freitas-572863-unsplash.dark.jpg'
+import bgImage from '../assets/images/victor-freitas-572863-unsplash.dark.sm2.jpg'
 import kosyoPic from '../assets/images/team/kosyo.jpg'
 import andrewPic from '../assets/images/team/andrew.jpg'
-import elizaPic from '../assets/images/team/eliza.jpg'
 import pavelPic from '../assets/images/team/pavel.jpg'
 
 export default {
@@ -86,7 +85,6 @@ export default {
       bgImage,
       kosyoPic,
       andrewPic,
-      elizaPic,
       pavelPic
     }
   }
