@@ -70,6 +70,9 @@ export default {
 
 .bmv-activities {
   padding: 5em 2em 3em 2em;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 
   & .bmv-title,
   & .bmv-activities-subtitle {
