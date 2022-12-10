@@ -1,7 +1,6 @@
 <template>
-  <div class="bmv-activities" id="activities">
-    <div class="bmv-title">Тренировки</div>
-    <h3 class="bmv-activities-subsection-title">Персонални</h3>
+  <div class="bmv-activities" id="personal-training">
+    <div class="bmv-title">Персонални Тренировки</div>
     <p class="bmv-activities-subsection-subtitle mb-4">
       <a href="#" v-scroll-to="'#contacts'" class="font-italic font-weight-bold"
         >Обади ни се</a
@@ -57,54 +56,12 @@
         </div>
       </div>
     </div>
-    <h3 class="bmv-activities-subsection-title pt-4" id="activities-groups">
-      Групови
-    </h3>
-    <p class="bmv-activities-subsection-subtitle mb-4">
-      Първата тренировка е безплатна. Oчакваме те!
-    </p>
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col bmv-activities-item">
-          <iframe
-            src="https://koalendar.com/e/strength-and-skill-class?embed=true"
-            width="100%"
-            height="900px"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <div class="col bmv-activities-item">
-          <iframe
-            src="https://koalendar.com/e/conditioning-class?embed=true"
-            width="100%"
-            height="900px"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <div class="col bmv-activities-item">
-          <iframe
-            src="https://koalendar.com/e/handstand-practice?embed=true"
-            width="100%"
-            height="900px"
-            frameborder="0"
-          ></iframe>
-        </div>
-        <div class="col bmv-activities-item">
-          <iframe
-            src="https://koalendar.com/e/body-in-motion?embed=true"
-            width="100%"
-            height="900px"
-            frameborder="0"
-          ></iframe>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ActivityTypes'
+  name: 'PersonalTraining'
 }
 </script>
 

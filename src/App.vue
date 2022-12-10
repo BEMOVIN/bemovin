@@ -4,8 +4,8 @@
     <carousel />
     <keycopy />
     <keycopy-gallery />
-    <activity-types />
-    <calendar />
+    <personal-training />
+    <group-activities />
     <team />
     <prices />
     <contacts />
@@ -18,8 +18,8 @@ import Navigation from './components/Navigation.vue'
 import Carousel from './components/Carousel.vue'
 import Keycopy from './components/Keycopy.vue'
 import KeycopyGallery from './components/KeycopyGallery.vue'
-import ActivityTypes from './components/ActivityTypes.vue'
-import Calendar from './components/calendar/Calendar.vue'
+import PersonalTraining from './components/PersonalTraining.vue'
+import GroupActivities from './components/GroupActivities.vue'
 import Team from './components/Team.vue'
 import Prices from './components/Prices.vue'
 import Contacts from './components/Contacts.vue'
@@ -32,8 +32,8 @@ export default {
     Carousel,
     Keycopy,
     KeycopyGallery,
-    ActivityTypes,
-    Calendar,
+    PersonalTraining,
+    GroupActivities,
     Team,
     Prices,
     Contacts,

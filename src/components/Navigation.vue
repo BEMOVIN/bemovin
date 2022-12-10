@@ -16,11 +16,14 @@
         <b-nav-item
           class="mx-3 text-nowrap"
           href="#"
-          v-scroll-to="'#activities'"
-          >Тренировки</b-nav-item
+          v-scroll-to="'#personal-training'"
+          >Персонални Тренировки</b-nav-item
         >
-        <b-nav-item class="mx-3 text-nowrap" href="#" v-scroll-to="'#schedule'"
-          >График</b-nav-item
+        <b-nav-item
+          class="mx-3 text-nowrap"
+          href="#"
+          v-scroll-to="'#group-activities'"
+          >Групови тренировки</b-nav-item
         >
         <b-nav-item class="mx-3 text-nowrap" href="#" v-scroll-to="'#team'"
           >Екип</b-nav-item
