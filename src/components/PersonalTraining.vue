@@ -96,6 +96,9 @@ export default {
     min-width: 14.5em;
     margin: 1em 1.5em;
     padding: 0;
+    min-width: 20em;
+    max-width: 36em;
+    width: 100%;
 
     &:hover {
       & .bmv-activities-icon {

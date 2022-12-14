@@ -90,6 +90,8 @@ export default {
     flex-flow: column nowrap;
     text-align: center;
     min-width: 20em;
+    max-width: 36em;
+    width: 100%;
     margin: 1em 1.5em;
     padding: 0;
   }
