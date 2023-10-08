@@ -6,11 +6,11 @@ on:
       - created
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out code
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Set up Node.js
@@ -21,8 +21,11 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Execute release script
-        run: yarn deploy
+      - name: Build your website
+        run: yarn build
 
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
