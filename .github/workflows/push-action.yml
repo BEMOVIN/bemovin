@@ -1,10 +1,9 @@
 name: Deploy GitHub Pages on Release
 
 on:
-  release:
-    types:
-      - created
-
+  push:
+    branches:
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
