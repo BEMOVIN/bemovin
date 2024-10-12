@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <span class="bmv-message">Карти за Handstand practice & Boby in motion</span>
+    <span class="bmv-message">Карти за Handstand practice & Body in motion</span>
     <div class="container">
       <div class="row justify-content-between bmv-price-tags bmv-prices-handstand-body-in-motion">
         <div data-aos="fade-right" data-aos-delay="200" class="col bmv-price-tag">
