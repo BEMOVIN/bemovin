@@ -82,9 +82,9 @@
 </template>
 
 <script>
-import slide1 from '../assets/images/slides/5.dark.jpg'
-import slide2 from '../assets/images/slides/squats.jpg'
-import slide3 from '../assets/images/slides/4.dark.jpg'
+import slide1 from '../assets/images/slides/1.webp'
+import slide2 from '../assets/images/slides/2.webp'
+import slide3 from '../assets/images/slides/3.webp'
 
 export default {
   name: 'Carousel',
@@ -112,6 +112,8 @@ export default {
     align-content: center;
     text-align: center;
     padding-top: 10em;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
 
     & .bmv-carousel-title-sm,
     & .bmv-carousel-title-lg {

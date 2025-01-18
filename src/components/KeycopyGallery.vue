@@ -60,13 +60,12 @@
 </template>
 
 <script>
-import img1 from '../assets/images/keycopy-gallery/GKXF0443.sm.dark.jpg'
-import img2 from '../assets/images/keycopy-gallery/GKXF0419.sm.dark.jpg'
-import img3 from '../assets/images/keycopy-gallery/GKXF0079.sm.dark.jpg'
-import img4 from '../assets/images/keycopy-gallery/meghan-holmes-1057329-unsplash.dark.sm.jpg'
-import img5 from '../assets/images/keycopy-gallery/TPH0348.dark.sm.jpg'
-import img6 from '../assets/images/keycopy-gallery/GKXF1182.dark.sm.jpg'
-import img7 from '../assets/images/keycopy-gallery/GKXF1203.dark.sm.jpg'
+import img1 from '../assets/images/keycopy-gallery/1.webp'
+import img2 from '../assets/images/keycopy-gallery/2.webp'
+import img3 from '../assets/images/keycopy-gallery/3.webp'
+import img4 from '../assets/images/keycopy-gallery/4.webp'
+import img5 from '../assets/images/keycopy-gallery/5.webp'
+import img6 from '../assets/images/keycopy-gallery/6.webp'
 
 export default {
   name: 'KeycopyGallery',
@@ -80,9 +79,9 @@ export default {
     },
     tilesSecondRow() {
       return [
-        { image: img5, delay: 400 },
-        { image: img6, delay: 600 },
-        { image: img7, delay: 800 }
+        { image: img4, delay: 400 },
+        { image: img5, delay: 600 },
+        { image: img6, delay: 800 }
       ]
     },
     img4() {
