@@ -2,9 +2,9 @@
   <div class="bmv-team">
     <div class="bmv-team-title" id="team">
       <span class="bmv-subtitle">Запознай се с</span>
-      <span class="bmv-title">Нашият Екип</span>
+      <span class="bmv-title">Нашия Екип</span>
       <span class="bmv-message">
-        Стремим се да подържаме приятелска атмосфера и добро настроение,<br />
+        Стремим се да поддържаме приятелска атмосфера и добро настроение,<br />
         така че тренировката да бъде още по-приятна!
       </span>
     </div>
