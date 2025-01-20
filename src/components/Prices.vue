@@ -1,37 +1,57 @@
 <template>
   <div class="bmv-prices" id="prices">
     <span class="bmv-title">Цени</span>
-    <span class="bmv-message">Карти за Strength & skill and Conditioning classes</span>
+    <span class="bmv-message"
+      >Карти за Strength & skill and Conditioning classes</span
+    >
     <div class="container">
-      <div class="row justify-content-between bmv-price-tags bmv-prices-strength-n-skill">
-        <div data-aos="fade-right" data-aos-delay="200" class="col bmv-price-tag">
+      <div
+        class="row justify-content-between bmv-price-tags bmv-prices-strength-n-skill"
+      >
+        <div
+          data-aos="fade-right"
+          data-aos-delay="200"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">Карта 4</div>
             <div class="card-body">
-              <h5 class="card-title">4 тренировки за месец</h5>
-              <h1 class="card-text bmv-price-label">60лв</h1>
+              <h5 class="card-title">4 тренировки за <br />30 дни</h5>
+              <h1 class="card-text bmv-price-label">70лв</h1>
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="400" class="col bmv-price-tag">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">Карта 8</div>
             <div class="card-body">
-              <h5 class="card-title">8 тренировки за месец</h5>
-              <h1 class="card-text bmv-price-label">100лв</h1>
+              <h5 class="card-title">8 тренировки за <br />45 дни</h5>
+              <h1 class="card-text bmv-price-label">110лв</h1>
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="600" class="col bmv-price-tag">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="600"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">Карта 12</div>
             <div class="card-body">
-              <h5 class="card-title">12 тренировки за месец</h5>
-              <h1 class="card-text bmv-price-label">120лв</h1>
+              <h5 class="card-title">12 тренировки за <br />60 дни</h5>
+              <h1 class="card-text bmv-price-label">150лв</h1>
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="800" class="col bmv-price-tag">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="800"
+          class="col bmv-price-tag"
+        >
           <div class="card accent">
             <div class="card-body">
               <h3>MEMBERSHIP ПРОГРАМА</h3>
@@ -46,41 +66,61 @@
       </div>
     </div>
 
-    <span class="bmv-message">Карти за Handstand practice & Body in motion</span>
+    <span class="bmv-message"
+      >Карти за Handstand practice & Body in motion</span
+    >
     <div class="container">
-      <div class="row justify-content-between bmv-price-tags bmv-prices-handstand-body-in-motion">
-        <div data-aos="fade-right" data-aos-delay="200" class="col bmv-price-tag">
+      <div
+        class="row justify-content-between bmv-price-tags bmv-prices-handstand-body-in-motion"
+      >
+        <div
+          data-aos="fade-right"
+          data-aos-delay="200"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">Карта П4</div>
             <div class="card-body">
-              <h5 class="card-title">4 тренировки за 45 дни</h5>
+              <h5 class="card-title">4 тренировки за <br />45 дни</h5>
               <h1 class="card-text bmv-price-label">85лв</h1>
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="400" class="col bmv-price-tag">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">Карта П8</div>
             <div class="card-body">
-              <h5 class="card-title">8 тренировки за 60 дни</h5>
+              <h5 class="card-title">8 тренировки за <br />60 дни</h5>
               <h1 class="card-text bmv-price-label">150лв</h1>
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="600" class="col bmv-price-tag">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="600"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">Карта П12</div>
             <div class="card-body">
-              <h5 class="card-title">12 тренировки за 90 дни</h5>
+              <h5 class="card-title">12 тренировки за <br />90 дни</h5>
               <h1 class="card-text bmv-price-label">220лв</h1>
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="800" class="col bmv-price-tag">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="800"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">Карта П16</div>
             <div class="card-body">
-              <h5 class="card-title">16 тренировки за 120 дни</h5>
+              <h5 class="card-title">16 тренировки за <br />120 дни</h5>
               <h1 class="card-text bmv-price-label">275лв</h1>
             </div>
           </div>
@@ -90,8 +130,14 @@
 
     <span class="bmv-message">Абонаменти за треньор</span>
     <div class="container">
-      <div class="row justify-content-between bmv-price-tags bmv-prices-trainers">
-        <div data-aos="fade-right" data-aos-delay="200" class="col bmv-price-tag">
+      <div
+        class="row justify-content-between bmv-price-tags bmv-prices-trainers"
+      >
+        <div
+          data-aos="fade-right"
+          data-aos-delay="200"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">T1</div>
             <div class="card-body">
@@ -102,7 +148,11 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="400" class="col bmv-price-tag">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">T2</div>
             <div class="card-body">
@@ -113,7 +163,11 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="600" class="col bmv-price-tag">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="600"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">T3</div>
             <div class="card-body">
@@ -124,7 +178,11 @@
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="800" class="col bmv-price-tag">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="800"
+          class="col bmv-price-tag"
+        >
           <div class="card">
             <div class="card-header">T+</div>
             <div class="card-body">
@@ -169,9 +227,11 @@ export default {
 
       &.accent {
         background: darken($c-palette-primary, 10%);
-        background: linear-gradient(0deg,
-            darken($c-palette-primary, 10%) 0%,
-            $c-palette-primary 100%);
+        background: linear-gradient(
+          0deg,
+          darken($c-palette-primary, 10%) 0%,
+          $c-palette-primary 100%
+        );
       }
     }
   }
