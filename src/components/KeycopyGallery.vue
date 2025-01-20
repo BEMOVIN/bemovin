@@ -27,9 +27,15 @@
     <div class="row">
       <div
         data-aos="fade-right"
-        data-aos-delay="500"
+        data-aos-delay="200"
         class="col"
-        :style="{ 'background-image': `url(${img4})` }"
+        :style="{ 'background-image': `url(${img1})` }"
+      ></div>
+      <div
+        data-aos="fade-right"
+        data-aos-delay="400"
+        class="col"
+        :style="{ 'background-image': `url(${img5})` }"
       ></div>
     </div>
     <div class="row">
@@ -69,25 +75,20 @@ import img6 from '../assets/images/keycopy-gallery/6.webp'
 
 export default {
   name: 'KeycopyGallery',
-  computed: {
-    tilesFirstRow() {
-      return [
-        { image: img1, delay: 400 },
-        { image: img2, delay: 600 },
-        { image: img3, delay: 800 }
-      ]
-    },
-    tilesSecondRow() {
-      return [
-        { image: img4, delay: 400 },
-        { image: img5, delay: 600 },
-        { image: img6, delay: 800 }
-      ]
-    },
-    img4() {
-      return img4
-    }
-  }
+  data: () => ({
+    tilesFirstRow: [
+      { image: img1, delay: 400 },
+      { image: img2, delay: 600 },
+      { image: img3, delay: 800 }
+    ],
+    tilesSecondRow: [
+      { image: img4, delay: 400 },
+      { image: img5, delay: 600 },
+      { image: img6, delay: 800 }
+    ],
+    img1,
+    img5
+  })
 }
 </script>
 
@@ -108,6 +109,7 @@ export default {
     & .col {
       flex: 1;
       background-size: cover;
+      background-position: center;
       min-height: $col-min-height;
     }
 
