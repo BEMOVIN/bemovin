@@ -109,7 +109,7 @@
 </template>
 
 <script>
-import bgImage from '../../assets/images/meghan-holmes-779221-unsplash.dark.jpg'
+import bgImage from '../../assets/images/calendar-bg.jpg'
 import { format, getDay, startOfWeek, endOfWeek, addDays } from 'date-fns'
 import { utcToZonedTime } from 'date-fns-tz'
 import locale from 'date-fns/locale/bg'

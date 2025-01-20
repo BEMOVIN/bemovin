@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import bgImage from '../assets/images/meghan-holmes-779221-unsplash.dark.jpg'
+import bgImage from '../assets/images/calendar-bg.jpg'
 
 export default {
   name: 'GroupActivities',
