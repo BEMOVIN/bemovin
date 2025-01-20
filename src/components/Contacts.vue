@@ -1,18 +1,27 @@
 <template>
   <div class="bmv-contacts" id="contacts">
-    <div class="bmv-contacts-img-wrapper" :style="{ 'background-image': `url(${bgImage})` }">
-      <span class="bmv-title bmv-title-dark">Присъедини се към<br />
+    <div
+      class="bmv-contacts-img-wrapper"
+      :style="{ 'background-image': `url(${bgImage})` }"
+    >
+      <span class="bmv-title bmv-title-dark"
+        >Присъедини се към<br />
         <span class="bmv-text-logo">
-          <span class="bmv-text-logo-accent">BE</span><span class="bmv-text-logo-normal">MOVIN</span>
+          <span class="bmv-text-logo-accent">BE</span
+          ><span class="bmv-text-logo-normal">MOVIN</span>
         </span>
       </span>
     </div>
     <div class="container bmv-contacts-content">
       <div class="row justify-content-center">
         <div class="col">
-          <iframe class="bmv-contacts-map"
+          <iframe
+            class="bmv-contacts-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.2310086169537!2d23.34818017757858!3d42.660324014143676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa85d339d90285%3A0xf67792d212c90724!2sBemovin!5e0!3m2!1sen!2sbg!4v1543886990576"
-            frameborder="0" style="border:0" allowfullscreen></iframe>
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
         </div>
         <div class="col">
           <div class="bmv-contacts-info">
@@ -34,8 +43,9 @@
                 <td><i class="fas fa-map-marker-alt"></i></td>
                 <td>
                   <a
-                    href="https://www.google.com/maps/place/Bemovin/@42.660324,23.3481802,17.25z/data=!4m5!3m4!1s0x40aa85d339d90285:0xf67792d212c90724!8m2!3d42.6604985!4d23.3491606">бул.
-                    „Доктор Г.М. Димитров“ 62, София</a>
+                    href="https://www.google.com/maps/place/Bemovin/@42.660324,23.3481802,17.25z/data=!4m5!3m4!1s0x40aa85d339d90285:0xf67792d212c90724!8m2!3d42.6604985!4d23.3491606"
+                    >бул. „Доктор Г.М. Димитров“ 62, София</a
+                  >
                 </td>
               </tr>
             </table>
@@ -46,16 +56,23 @@
     <div class="bmv-contacts-social">
       <h6 class="bmv-contacts-social-title">Следвайте ни</h6>
       <div class="bmv-social-icons-pack">
-        <a href="https://www.facebook.com/bemovinsport"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/bemovinsport"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCchRJiyYsgQl5oGdagyqk9w/featured"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/bemovinsport"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/bemovinsport"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCchRJiyYsgQl5oGdagyqk9w/featured"
+          ><i class="fab fa-youtube"></i
+        ></a>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import bgImage from '../assets/images/meghan-holmes-1057329-unsplash.dark.jpg'
+import bgImage from '../assets/images/join-bemovin-bg.webp'
 
 export default {
   name: 'Contacts',
@@ -87,6 +104,7 @@ export default {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom;
   }
 
   & .bmv-contacts-content {
