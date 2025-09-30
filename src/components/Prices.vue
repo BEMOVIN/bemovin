@@ -60,8 +60,8 @@
               <h3>MEMBERSHIP ПРОГРАМА</h3>
               <h5 class="card-title">Годишна такса</h5>
               <div class="card-text">
-                <h1 class="bmv-price-label">1000лв</h1>
-                <h2 class="bmv-price-label bmv-price-euro">511.29</h2>
+                <h1 class="bmv-price-label">1075.71лв</h1>
+                <h2 class="bmv-price-label bmv-price-euro">550</h2>
                 <p>Възможност за плащане на 3 вноски</p>
               </div>
             </div>
