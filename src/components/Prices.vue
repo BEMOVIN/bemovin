@@ -152,8 +152,8 @@
               <h5 class="card-title">
                 1 тренировка седмично в рамките на 1 месец
               </h5>
-              <h1 class="card-text bmv-price-label">180лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">92.03</h2>
+              <h1 class="card-text bmv-price-label">195.58лв</h1>
+              <h2 class="card-text bmv-price-label bmv-price-euro">100</h2>
             </div>
           </div>
         </div>
@@ -168,8 +168,8 @@
               <h5 class="card-title">
                 2 тренировки седмично в рамките на 1 месец
               </h5>
-              <h1 class="card-text bmv-price-label">295лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">150.83</h2>
+              <h1 class="card-text bmv-price-label">332.49лв</h1>
+              <h2 class="card-text bmv-price-label bmv-price-euro">170</h2>
             </div>
           </div>
         </div>
@@ -184,8 +184,8 @@
               <h5 class="card-title">
                 3 тренировки седмично в рамките на 1 месец
               </h5>
-              <h1 class="card-text bmv-price-label">385лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">196.84</h2>
+              <h1 class="card-text bmv-price-label">430.28лв</h1>
+              <h2 class="card-text bmv-price-label bmv-price-euro">220</h2>
             </div>
           </div>
         </div>
