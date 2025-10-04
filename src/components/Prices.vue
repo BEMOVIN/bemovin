@@ -86,8 +86,8 @@
             <div class="card-header">Карта П4</div>
             <div class="card-body">
               <h5 class="card-title">4 тренировки за <br />45 дни</h5>
-              <h1 class="card-text bmv-price-label">85лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">43.45</h2>
+              <h1 class="card-text bmv-price-label">88.01лв</h1>
+              <h2 class="card-text bmv-price-label bmv-price-euro">45</h2>
             </div>
           </div>
         </div>
@@ -100,8 +100,8 @@
             <div class="card-header">Карта П8</div>
             <div class="card-body">
               <h5 class="card-title">8 тренировки за <br />60 дни</h5>
-              <h1 class="card-text bmv-price-label">150лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">76.69</h2>
+              <h1 class="card-text bmv-price-label">156.47лв</h1>
+              <h2 class="card-text bmv-price-label bmv-price-euro">80</h2>
             </div>
           </div>
         </div>
@@ -114,8 +114,8 @@
             <div class="card-header">Карта П12</div>
             <div class="card-body">
               <h5 class="card-title">12 тренировки за <br />90 дни</h5>
-              <h1 class="card-text bmv-price-label">220лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">112.48</h2>
+              <h1 class="card-text bmv-price-label">224.92лв</h1>
+              <h2 class="card-text bmv-price-label bmv-price-euro">115</h2>
             </div>
           </div>
         </div>
@@ -128,8 +128,8 @@
             <div class="card-header">Карта П16</div>
             <div class="card-body">
               <h5 class="card-title">16 тренировки за <br />120 дни</h5>
-              <h1 class="card-text bmv-price-label">275лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">140.60</h2>
+              <h1 class="card-text bmv-price-label">283.60лв</h1>
+              <h2 class="card-text bmv-price-label bmv-price-euro">145</h2>
             </div>
           </div>
         </div>
