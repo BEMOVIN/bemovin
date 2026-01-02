@@ -17,8 +17,8 @@
             <div class="card-header">Карта 4</div>
             <div class="card-body">
               <h5 class="card-title">4 тренировки за <br />30 дни</h5>
-              <h1 class="card-text bmv-price-label">70лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">35.79</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">35</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">68.75</h2>
             </div>
           </div>
         </div>
@@ -31,8 +31,8 @@
             <div class="card-header">Карта 8</div>
             <div class="card-body">
               <h5 class="card-title">8 тренировки за <br />45 дни</h5>
-              <h1 class="card-text bmv-price-label">110лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">56.24</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">55</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">107.58</h2>
             </div>
           </div>
         </div>
@@ -45,8 +45,8 @@
             <div class="card-header">Карта 12</div>
             <div class="card-body">
               <h5 class="card-title">12 тренировки за <br />60 дни</h5>
-              <h1 class="card-text bmv-price-label">150лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">76.69</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">75</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">146.69</h2>
             </div>
           </div>
         </div>
@@ -60,8 +60,8 @@
               <h3>MEMBERSHIP ПРОГРАМА</h3>
               <h5 class="card-title">Годишна такса</h5>
               <div class="card-text">
-                <h1 class="bmv-price-label">1075.71лв</h1>
-                <h2 class="bmv-price-label bmv-price-euro">550</h2>
+                <h1 class="bmv-price-label bmv-price-euro">550</h1>
+                <h2 class="bmv-price-label bmv-price-bgn">1075.71</h2>
                 <p>Възможност за плащане на 3 вноски</p>
               </div>
             </div>
@@ -86,8 +86,8 @@
             <div class="card-header">Карта П4</div>
             <div class="card-body">
               <h5 class="card-title">4 тренировки за <br />45 дни</h5>
-              <h1 class="card-text bmv-price-label">88.01лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">45</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">45</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">88.01</h2>
             </div>
           </div>
         </div>
@@ -100,8 +100,8 @@
             <div class="card-header">Карта П8</div>
             <div class="card-body">
               <h5 class="card-title">8 тренировки за <br />60 дни</h5>
-              <h1 class="card-text bmv-price-label">156.47лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">80</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">80</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">156.47</h2>
             </div>
           </div>
         </div>
@@ -114,8 +114,8 @@
             <div class="card-header">Карта П12</div>
             <div class="card-body">
               <h5 class="card-title">12 тренировки за <br />90 дни</h5>
-              <h1 class="card-text bmv-price-label">224.92лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">115</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">115</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">224.92</h2>
             </div>
           </div>
         </div>
@@ -128,8 +128,8 @@
             <div class="card-header">Карта П16</div>
             <div class="card-body">
               <h5 class="card-title">16 тренировки за <br />120 дни</h5>
-              <h1 class="card-text bmv-price-label">283.60лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">145</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">145</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">283.60</h2>
             </div>
           </div>
         </div>
@@ -152,8 +152,8 @@
               <h5 class="card-title">
                 1 тренировка седмично в рамките на 1 месец
               </h5>
-              <h1 class="card-text bmv-price-label">195.58лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">100</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">100</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">195.58</h2>
             </div>
           </div>
         </div>
@@ -168,8 +168,8 @@
               <h5 class="card-title">
                 2 тренировки седмично в рамките на 1 месец
               </h5>
-              <h1 class="card-text bmv-price-label">332.49лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">170</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">170</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">332.49</h2>
             </div>
           </div>
         </div>
@@ -184,8 +184,8 @@
               <h5 class="card-title">
                 3 тренировки седмично в рамките на 1 месец
               </h5>
-              <h1 class="card-text bmv-price-label">430.28лв</h1>
-              <h2 class="card-text bmv-price-label bmv-price-euro">220</h2>
+              <h1 class="card-text bmv-price-label bmv-price-euro">220</h1>
+              <h2 class="card-text bmv-price-label bmv-price-bgn">430.28</h2>
             </div>
           </div>
         </div>
@@ -265,6 +265,12 @@ export default {
     &::before {
       content: '€';
       margin-right: 0.1em;
+    }
+  }
+
+  & .bmv-price-bgn {
+    &::after {
+      content: 'лв';
     }
   }
 
